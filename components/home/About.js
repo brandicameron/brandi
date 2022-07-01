@@ -1,7 +1,7 @@
 import styles from '../../styles/home/About.module.css';
 import { useState } from 'react';
 import Image from 'next/image';
-import ProjectBtn from '../shared/ProjectBtn';
+import Link from 'next/link';
 
 export default function About() {
   const [toggled, setToggled] = useState(false);
@@ -13,7 +13,7 @@ export default function About() {
   return (
     <section className={styles.about} id='about'>
       <div className={styles.content}>
-        <h2>Hi, I'm Brandi.</h2>
+        <h2>Hi, I&apos;m Brandi.</h2>
         <div className={toggled ? `${styles.toggle} ${styles.clicked}` : `${styles.toggle}`}>
           <button
             onClick={handleToggled}
@@ -22,7 +22,8 @@ export default function About() {
           ></button>
         </div>
         <p>
-          I'm a highly driven, front-end focused developer that thrives in creative environments.
+          I&apos;m a highly driven, front-end focused developer that thrives in creative
+          environments.
           <span style={{ display: toggled ? 'contents' : 'none' }}>
             &nbsp; I love problem solving and feel that restrictions (design or otherwise) tend to
             fuel the most creative solutions.
@@ -54,7 +55,7 @@ export default function About() {
           <a href='mailto:hello@brandicameron.com?subject=Hi%20Brandi!' className={styles.reachOut}>
             {toggled ? 'reach out' : ' Reach out'}
           </a>{' '}
-          — let's create some cool things together!
+          — let&apos;s create some cool things together!
         </p>
         <div className={styles.buttons} id='contact'>
           <a
@@ -75,7 +76,7 @@ export default function About() {
               />
             </span>
           </a>
-          <a href='/' className='btn' target='blank' title='Resume'>
+          <a href='www.brandicameron.com' className='btn' target='blank' title='Resume'>
             <span className='btn-shadow'></span>
             <span className='btn-front'>
               Resume

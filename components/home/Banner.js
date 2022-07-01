@@ -43,7 +43,7 @@ export default function Banner({ weatherData, sunRiseSet }) {
             Front-end Developer & Domain Hoarder
           </span>
           <span className={styles.weather}>
-            in Nashville where it's {temp}° and {condition}
+            in Nashville where it&apos;s {temp}° and {condition}
           </span>
         </h1>
         <div className={styles.brandi}>

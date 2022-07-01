@@ -11,7 +11,7 @@ export default function Playground() {
   return (
     <>
       <Head>
-        <title>Welcome to Brandi's playground.</title>
+        <title>Welcome to Brandi&apos;s playground.</title>
         <meta
           name='description'
           content="Welcome to Brandi's playground, a place for showcasing small projects created for the fun of coding."

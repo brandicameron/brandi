@@ -10,9 +10,9 @@ export default function FourOhFour() {
       </Head>
       <section className={styles.container}>
         <h1>
-          How'd you find <i>this</i> place???
+          How&apos;d you find <i>this</i> place???
         </h1>
-        <p>I didn't even know it existed...weird.</p>
+        <p>I didn&apos;t even know it existed...weird.</p>
         <Link href='/'>
           <a className='btn lg'>
             <span className='btn-shadow'></span>

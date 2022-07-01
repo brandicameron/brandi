@@ -45,7 +45,7 @@ export default function Project({ project }) {
 
         {project.description && project.description.map((p) => <p key={uuidv4()}>{p}</p>)}
         {project.link && (
-          <a className={styles.link} href={project.link} target='_blank'>
+          <a className={styles.link} href={project.link} target='_blank' rel='noreferrer'>
             {project.link}
           </a>
         )}
