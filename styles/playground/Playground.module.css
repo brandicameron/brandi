@@ -1,0 +1,75 @@
+.playgroundContainer {
+  position: relative;
+  padding: 4rem 5vw 4rem 5vw;
+  overflow-x: hidden;
+}
+
+.background {
+  position: absolute;
+  top: 450px;
+  left: 0;
+  width: 100vw;
+  height: calc(100% - 450px);
+  background-color: var(--primary);
+  clip-path: polygon(0 200px, 100% 0, 100% 100%, 0 100%);
+  z-index: -1;
+}
+
+.playgroundContainer h1 img {
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+}
+
+.playgroundContainer h2 {
+  font-size: var(--med);
+  font-weight: var(--bold);
+  max-width: 925px;
+  padding-top: 2rem;
+  line-height: 140%;
+}
+
+.projectsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  place-items: center;
+  place-content: center;
+  align-items: stretch;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 4rem auto;
+}
+
+.runner {
+  position: absolute;
+  bottom: 0;
+  font-size: var(--med);
+  font-weight: var(--bold);
+  background-color: var(--background);
+  padding: 0.25rem 0;
+  white-space: nowrap;
+  border-top: 6px solid var(--textColor);
+  border-bottom: 6px solid var(--textColor);
+  box-shadow: -15px -20px 20px -20px rgb(34 34 34 / 30%);
+  z-index: 1001;
+}
+
+@media screen and (max-width: 600px) {
+  .playgroundContainer h1 img {
+    margin-top: -20px;
+  }
+
+  .projectsContainer {
+    margin: 2rem auto 0 auto;
+  }
+
+  .background {
+    height: calc(100% - 200px);
+    top: 400px;
+    clip-path: polygon(0 80px, 100% 0, 100% 100%, 0 100%);
+  }
+
+  .runner {
+    display: none;
+  }
+}

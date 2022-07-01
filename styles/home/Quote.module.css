@@ -1,0 +1,58 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 10rem 0 17rem 0;
+  /* padding: var(--themePadding); */
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  /* clip-path: var(--themeClipPath); */
+}
+
+.quote {
+  font-size: var(--xl);
+  font-weight: var(--bold);
+  line-height: 1.15;
+  margin: 0 auto;
+  transform: skewY(-8deg);
+}
+
+.rush,
+.free {
+  margin-top: 7px;
+}
+
+.free {
+  filter: drop-shadow(1px 1px 0px var(--white)) drop-shadow(2px 2px 0px var(--white))
+    drop-shadow(3px 3px 0px var(--white)) drop-shadow(5px 5px 0px var(--white))
+    drop-shadow(4px 4px 0px var(--white)) drop-shadow(6px 6px 0px var(--white));
+  /* drop-shadow(7px 7px 0px var(--white)) drop-shadow(8px 8px 0px var(--white)); */
+  /* drop-shadow(9px 9px 0px var(--white)) drop-shadow(10px 10px 0px var(--white)); */
+}
+
+@media screen and (max-width: 650px) {
+  .container {
+    padding: 5rem 5vw 9rem 5vw;
+  }
+
+  .rush,
+  .free {
+    width: 88vw;
+    height: auto;
+    padding: 6px 0;
+  }
+
+  .quote {
+    font-size: 8vw;
+  }
+}
+
+/* Landscape Mobile */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  .container {
+    margin-top: 2rem;
+    padding: 8rem 5vw;
+    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+  }
+}

@@ -1,0 +1,54 @@
+.partlyCloudy {
+  position: absolute;
+  top: -100px;
+  width: 100vw;
+  height: 500px;
+  aspect-ratio: 1554/450;
+  background-image: url('/images/weather/partly-cloudy.png');
+  background-repeat: repeat-x;
+  background-position-x: -50px;
+  filter: drop-shadow(10px 15px 30px rgba(34 34 34 / 25%));
+  z-index: 2;
+  /* z-index prevents shadow being cut off in safari */
+}
+
+.cloudSmall {
+  position: absolute;
+  top: 2.75vh;
+  left: 5vw;
+  filter: drop-shadow(10px 15px 30px rgba(34 34 34 / 25%));
+  animation: float 200s linear infinite;
+  z-index: 3;
+  /* z-index prevents shadow being cut off in safari */
+}
+
+@keyframes float {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100vw);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .partlyCloudy {
+    top: 0;
+    height: 500px;
+    background-position-y: -40px;
+    background-position-x: -450px;
+    background-size: 200%;
+    z-index: 100;
+    overflow: hidden;
+  }
+
+  .cloudSmall {
+    z-index: 101;
+    left: -50px;
+    top: -20px;
+  }
+
+  .cloudSmall img {
+    transform: scale(0.5);
+  }
+}

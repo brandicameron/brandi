@@ -1,0 +1,57 @@
+.ctaContainer {
+  background-color: var(--background);
+}
+
+.ctaContainer h2 {
+  position: relative;
+  margin: 10rem auto 12rem auto;
+  width: 85vw;
+  max-width: 1000px;
+  font-size: var(--lg);
+  text-align: center;
+}
+
+.ctaContainer h2 a {
+  position: relative;
+  color: var(--primary);
+}
+
+/* for hover underline */
+.ctaContainer h2 a::after {
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  transform: scaleX(0);
+  height: 6px;
+  background-color: var(--primary);
+  border-radius: 1px;
+  transition: transform 75ms linear;
+  transform-origin: left;
+}
+
+.ctaContainer h2 a:hover::after {
+  transform: scaleX(1);
+}
+
+.heyText {
+  display: block;
+  background-image: url('/images/home/hey.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 275px;
+}
+
+@media screen and (max-width: 600px) {
+  .ctaContainer h2 {
+    margin: 5rem auto 10rem auto;
+    text-align: left;
+  }
+
+  .heyText {
+    background-image: url('/images/home/hey-mobile.svg');
+    height: 210px;
+  }
+}

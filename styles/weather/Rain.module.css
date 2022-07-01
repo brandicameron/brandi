@@ -1,0 +1,38 @@
+.rainContainer {
+  position: absolute;
+  width: 150vw;
+  height: 55vh;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.rainDrop {
+  position: absolute;
+  height: 7px;
+  border-radius: 20px;
+  transform: translateY(0) translateX(0) rotate(55deg) rotateZ(360deg);
+  background-color: var(--primary);
+  animation-name: rain;
+  animation-timing-function: linear;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  will-change: transform;
+}
+
+@keyframes rain {
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(48vh) translateX(20vw) rotate(55deg) rotateZ(360deg);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .rainContainer {
+    top: -30px;
+    left: -50px;
+  }
+}

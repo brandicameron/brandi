@@ -1,0 +1,16 @@
+.stripeBorder {
+  position: relative;
+  width: 100%;
+  height: 15px;
+  background-image: linear-gradient(
+    90deg,
+    #ffffff 25%,
+    #242424 25%,
+    #242424 50%,
+    #ffffff 50%,
+    #ffffff 75%,
+    #242424 75%,
+    #242424 100%
+  );
+  background-size: 20px 20px;
+}

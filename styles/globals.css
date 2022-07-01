@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap');
+
+:root {
+  --black: #1e1e1e;
+  --white: #f9f9f9;
+  --primary: #3e50ef;
+  --textColor: #1e1e1e;
+  --background: #f9f9f9;
+  --bold: 900;
+  --xl: 3.625rem;
+  --lg: 2rem;
+  --med: 1.35rem;
+  --borderRadius: 8px;
+  --themeBackground: #f9f9f9;
+  --themeTextColor: #1e1e1e;
+}
+
+[data-theme='dark'] {
+  --themeBackground: #1e1e1e;
+  --themeTextColor: #f9f9f9;
+  --invert: invert(1) brightness(1.2);
+}
+
+/* Resets */
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: 'Inter', -apple-system, sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  scroll-padding-top: 150px;
+}
+
+body {
+  font-weight: 400;
+  color: var(--textColor);
+  overflow-x: hidden;
+  background-color: var(--background);
+}
+
+a,
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  font-size: inherit;
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  border: none;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+img,
+picture,
+video,
+canvas {
+  display: block;
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  line-height: 1.25;
+}
+p {
+  line-height: 1.6;
+}
+
+img {
+  object-fit: cover;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* The VoiceOver screen reader has an issue where unordered lists with a list-style-type value of none applied to them will not be announced as a list. To address this, add a zero-width space as pseudo content before each list item to ensure the list is announced properly. This ensures the design is unaffected by the bug fix and that list items are not improperly described.
+https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type
+ */
+
+ul li::before {
+  content: '\200B';
+}
+
+li {
+  padding: 0;
+}
+
+i {
+  margin-right: 3px;
+}
+
+/* Utilities */
+
+*:focus-visible {
+  outline: 6px solid #ffbf00;
+  box-shadow: inset 2px 2px 5px rgba(0 0 0 / 25%);
+  border-radius: var(--borderRadius);
+}
+
+.main {
+  position: relative;
+  top: 65px;
+}
+
+/* Global Buttons */
+
+.btn {
+  position: relative;
+  background-color: var(--white);
+  color: var(--textColor);
+  font-weight: var(--bold);
+  line-height: 105%;
+  border-radius: var(--borderRadius);
+  width: 100%;
+  min-width: 120px;
+  height: 50px;
+  padding: 0 10px;
+  box-shadow: 15px 20px 30px -20px rgb(34, 34, 34);
+}
+
+.btn.lg {
+  font-size: var(--med);
+  width: 85vw;
+  max-width: 375px;
+}
+
+.btn + .btn {
+  margin-left: 5px;
+}
+
+.btn-shadow {
+  position: absolute;
+  background: var(--textColor);
+  height: 100%;
+  width: 100%;
+  border-radius: var(--borderRadius);
+  bottom: -4px;
+  right: -3px;
+}
+
+.btn-front {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: var(--borderRadius);
+  background-color: var(--background);
+  border: 3px solid var(--textColor);
+  transition: 75ms ease-in;
+}
+
+.btn-front:hover {
+  transform: translateY(-2px) translateX(-2px);
+  background: var(--primary);
+  color: var(--white);
+}
+
+.btn-front:hover .icon {
+  filter: invert(1) brightness(1.5);
+}
+
+.btn-front:active {
+  outline: none;
+  transform: translateY(3px) translateX(2px);
+}
+
+@media screen and (max-width: 600px) {
+  .main {
+    position: relative;
+    top: 0;
+    margin: 0 auto;
+    width: 100vw;
+  }
+
+  .mobile-break {
+    display: block;
+  }
+
+  .btn {
+    height: 55px;
+  }
+
+  .btn-shadow {
+    bottom: -5px;
+    right: -4px;
+  }
+}
+
+/* Landscape Mobile */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  .main {
+    position: relative;
+    top: 0;
+    margin: 0 auto;
+    width: 100vw;
+  }
+
+  .mobile-break {
+    display: block;
+  }
+
+  .btn {
+    height: 55px;
+  }
+
+  .btn-shadow {
+    bottom: -5px;
+    right: -4px;
+  }
+}

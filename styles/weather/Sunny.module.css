@@ -1,0 +1,84 @@
+.sunMoonContainer {
+  position: absolute;
+  top: 1rem;
+  left: 0;
+  width: 250px;
+  height: 250px;
+}
+
+.sunshine {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  fill: var(--primary);
+}
+
+.moon {
+  fill: var(--primary);
+  transform: scale(0.8);
+}
+
+.cloudContainer {
+  position: absolute;
+  display: flex;
+  top: -35px;
+  width: 100vw;
+  height: 60vh;
+  overflow: hidden;
+}
+
+.cloudFlat,
+.cloudRound {
+  position: relative;
+  opacity: 0.97;
+  filter: drop-shadow(10px 15px 30px rgba(34 34 34 / 25%));
+}
+
+.cloudFlat {
+  top: 3vh;
+  animation: float 240s linear infinite;
+  animation-delay: -50s;
+}
+
+.cloudRound {
+  top: 15vh;
+  animation: float 240s linear infinite;
+  animation-delay: -100s;
+}
+
+@keyframes float {
+  0% {
+    transform: translateX(-400px);
+  }
+  100% {
+    transform: translateX(100vw);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .sunMoonContainer {
+    transform: scale(0.7);
+    top: -1.5rem;
+    left: -1.5rem;
+  }
+
+  .moon {
+    transform: scale(0.7);
+  }
+
+  .cloudContainer {
+    top: 0;
+  }
+
+  .cloudFlat {
+    top: 3vh;
+    animation: float 240s linear infinite;
+    animation-delay: -100s;
+  }
+
+  .cloudRound {
+    top: 11vh;
+    animation: float 240s linear infinite;
+    animation-delay: -350s;
+  }
+}

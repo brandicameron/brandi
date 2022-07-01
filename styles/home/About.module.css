@@ -1,0 +1,150 @@
+.about {
+  position: relative;
+}
+
+.brandi {
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 12rem 0;
+  clip-path: polygon(0 0, 100% 125px, 100% 100%, 0 100%);
+}
+
+.content h2 {
+  font-size: var(--lg);
+  margin: 2rem auto 0 auto;
+}
+
+.toggle {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55px;
+  height: 26px;
+  background-color: #ffd000;
+  font-weight: var(--bold);
+  font-size: 1.2rem;
+  border: 6px solid var(--black);
+  border-radius: 11px;
+  margin: 1.5rem 0;
+}
+
+.toggle::before {
+  content: 'Concise';
+  position: relative;
+  left: -40px;
+}
+
+.toggle::after {
+  content: 'Verbose';
+  position: relative;
+  right: -40px;
+}
+
+.toggleBtn {
+  position: absolute;
+  /* used padding instead of fixed size with aspect ratio due to no support in Safari <15  */
+  padding: 12px;
+  top: -11px;
+  background-color: var(--white);
+  border: 6px solid var(--black);
+  border-radius: 50%;
+  transform: translateX(-12px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.45);
+  transition: transform 150ms linear;
+}
+
+.toggle.clicked {
+  background-color: lawngreen;
+}
+
+.toggleBtn.clicked {
+  transform: translateX(12px);
+}
+
+.content p {
+  width: 85vw;
+  max-width: 475px;
+  font-size: 1.1rem;
+}
+
+.content p + .content p {
+  margin-top: 1rem;
+}
+
+.reachOut {
+  font-weight: var(--bold);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 2px;
+}
+
+.reachOut:hover {
+  opacity: 0.9;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
+  place-items: center;
+  gap: 0.75rem;
+  width: 85vw;
+  max-width: 475px;
+  margin-top: 2rem;
+}
+
+.buttons > :last-child {
+  grid-column: 1/-1;
+}
+
+@media screen and (max-width: 600px) {
+  .content {
+    clip-path: polygon(0 0, 100% 75px, 100% 100%, 0 100%);
+    padding: 12rem 0 8rem 0;
+  }
+
+  .content h2 {
+    margin: 0 auto;
+  }
+
+  .toggle {
+    width: 70px;
+    height: 35px;
+    font-size: 1.3rem;
+    border-radius: 13px;
+    margin: 1.5rem 0;
+  }
+
+  .toggle::before {
+    left: -50px;
+  }
+
+  .toggle::after {
+    right: -50px;
+  }
+
+  .toggleBtn {
+    top: -12px;
+    padding: 15px;
+    transform: translateX(-20px);
+  }
+
+  .toggleBtn.clicked {
+    transform: translateX(20px);
+  }
+
+  .buttons > :last-child {
+    grid-column: unset;
+  }
+}

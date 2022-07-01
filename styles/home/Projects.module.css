@@ -1,0 +1,39 @@
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  padding-bottom: 10rem;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+}
+
+.project:nth-child(even) > * {
+  flex-direction: row-reverse;
+}
+
+.project:last-of-type {
+  margin-bottom: 10rem;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    padding-bottom: 7rem;
+  }
+
+  .projects {
+    gap: 0;
+  }
+
+  .project:nth-child(even) > * {
+    flex-direction: column;
+  }
+
+  .project:last-of-type {
+    margin-bottom: 0;
+  }
+}

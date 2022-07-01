@@ -1,0 +1,26 @@
+.lightningBolt {
+  position: absolute;
+  width: 64px;
+  height: 82px;
+  opacity: 0;
+  animation: strike 200ms linear backwards;
+}
+
+.lightningLeft {
+  top: 11vh;
+  left: 20vw;
+  animation-delay: 2s;
+}
+
+.lightningRight {
+  top: 8vh;
+  right: 20vw;
+  transform: scaleX(-1);
+  animation-delay: 2.2s;
+}
+
+@keyframes strike {
+  100% {
+    opacity: 1;
+  }
+}

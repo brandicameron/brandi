@@ -1,0 +1,117 @@
+.container {
+  position: relative;
+  width: 100vw;
+  height: calc(100vh - 6px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--themeBackground);
+}
+
+.bannerContent {
+  position: relative;
+  width: 90vw;
+  max-width: 850px;
+  /* margin-top: 5vh; */
+}
+
+.nameSvg {
+  aspect-ratio: auto 900 / 172;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  filter: var(--invert);
+}
+
+.dot {
+  position: absolute;
+  width: 5.9%;
+  height: auto;
+  top: 0;
+  right: 3px;
+  filter: var(--invert);
+}
+
+.title {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: var(--lg);
+  font-weight: var(--bold);
+  line-height: 1.1;
+  color: var(--primary);
+  margin-top: 1.5rem;
+}
+
+.weather {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: normal;
+  text-align: center;
+  line-height: 1.5;
+  margin-top: 0.5rem;
+  /* margin-top: 2rem; */
+  color: var(--themeTextColor);
+}
+
+.brandi {
+  position: absolute;
+  top: -11rem;
+  left: 44%;
+  transform: translateX(-44%);
+  filter: drop-shadow(-5px 10px 6px rgba(0 0 0 / 40%));
+}
+
+.surprise {
+  position: absolute;
+  top: 9.5%;
+  left: 44.4%;
+}
+
+.techIcons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85vw;
+  max-width: 700px;
+  margin-top: 50px;
+  margin-bottom: -50px;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    height: 100vh;
+    top: 0;
+  }
+
+  .bannerContent {
+    top: 45px;
+  }
+
+  .brandi {
+    transform: translateX(-44%) scale(0.9);
+  }
+
+  .dot {
+    right: 1.5px;
+  }
+
+  .surprise {
+    left: 42.9%;
+  }
+}
+
+/* Landscape Mobile */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  .bannerContent {
+    top: 100px;
+  }
+
+  .brandi {
+    top: -10.75rem;
+    left: 26.5%;
+    transform: scale(0.6);
+  }
+}

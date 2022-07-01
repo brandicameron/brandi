@@ -1,0 +1,52 @@
+.projectCard {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background);
+  border-radius: var(--borderRadius);
+  padding: 1rem;
+  height: 100%;
+  filter: drop-shadow(10px 10px 10px rgba(0 0 0 / 15%));
+  border: 1px solid rgb(235, 235, 235);
+}
+
+.cardImg {
+  filter: drop-shadow(5px 5px 7px rgba(0 0 0 / 20%));
+}
+
+.cardImg img {
+  border-radius: var(--borderRadius);
+}
+
+.projectContent {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 100%;
+  margin: 0 auto 1rem auto;
+}
+
+.projectContent h3 {
+  font-size: var(--lg);
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.projectContent p {
+  margin: 0.75rem 0;
+}
+
+.projectContent p:last-of-type {
+  margin-bottom: 1.5rem;
+}
+
+.projectBtns {
+  display: flex;
+  gap: 8px;
+  margin-top: auto;
+}
+
+@media screen and (max-width: 600px) {
+  .projectBtns {
+    margin: auto auto 1rem auto;
+  }
+}

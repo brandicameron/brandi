@@ -1,0 +1,151 @@
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+  width: 85vw;
+  max-width: 1300px;
+}
+
+.projectImages {
+  position: relative;
+  margin-top: -50px;
+  z-index: 50;
+  filter: drop-shadow(18px 15px 20px rgb(179, 179, 179));
+}
+
+.iphone {
+  position: absolute;
+  top: 5%;
+  right: -5%;
+}
+
+.iphone,
+.ipad {
+  /* this padding prevents drop shadow cut-off in safari */
+  padding: 3rem;
+  width: 45vw;
+  max-width: 620px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  max-width: 650px;
+}
+
+.content h2 {
+  font-weight: var(--bold);
+  text-align: center;
+  font-size: var(--lg);
+  margin: 0;
+}
+
+.techList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.95rem;
+  gap: 3px;
+  padding: 0.35rem 1.5rem;
+  margin: 0.75rem auto 1rem auto;
+  border-top: 1px dotted var(--background);
+  border-bottom: 1px dotted var(--background);
+}
+
+.techItem {
+  list-style: disc;
+  padding: 0 20px 0 0;
+}
+.techItem:first-child {
+  list-style: none;
+}
+
+.techItem:last-child {
+  padding: 0;
+}
+
+.content p {
+  align-self: flex-start;
+}
+
+.descriptionList {
+  list-style: disc;
+  width: 85%;
+  margin: 0 auto;
+  padding: 0;
+  margin-left: 20px;
+}
+
+.descriptionList li {
+  margin: 1rem 0;
+}
+
+.link {
+  color: var(--primary);
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+
+.projectNav {
+  display: flex;
+  width: 100%;
+  margin: 1.5rem 0;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .card,
+  .card:nth-child(even) {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .card:last-child {
+    margin-bottom: 4rem;
+  }
+
+  .projectImages {
+    margin-left: -1.5rem;
+  }
+
+  .ipad,
+  .iphone {
+    width: 95vw;
+  }
+
+  .content {
+    width: 85vw;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+  }
+
+  .techList {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    margin: 0.75rem auto 1rem auto;
+  }
+
+  .projectNav {
+    width: 100%;
+  }
+}
+
+/* Landscape Mobile */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  .card,
+  .card:nth-child(even) {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .projectImages {
+    max-width: 60vw;
+  }
+
+  .content {
+    width: 85vw;
+  }
+}

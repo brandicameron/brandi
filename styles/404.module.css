@@ -1,0 +1,31 @@
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container h1 {
+  text-align: center;
+  font-size: var(--xl);
+  margin-top: -10vh;
+}
+
+.container h1 i {
+  color: var(--primary);
+}
+
+.container p {
+  margin: 1rem 0 4rem 0;
+}
+
+@media screen and (max-width: 600px) {
+  .container h1 {
+    max-width: 250px;
+  }
+
+  .container a {
+    width: 85vw;
+  }
+}

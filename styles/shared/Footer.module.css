@@ -1,0 +1,15 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 150px;
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+@media screen and (max-width: 600px) {
+  .footer {
+    padding-bottom: 3rem;
+  }
+}
