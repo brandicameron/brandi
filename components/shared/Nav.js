@@ -21,7 +21,11 @@ export default function Nav() {
         Skip to Content
       </a>
       <nav>
-        <button className={styles.hamburgerBtn} onClick={handleOpenCloseMenu}>
+        <button
+          className={styles.hamburgerBtn}
+          onClick={handleOpenCloseMenu}
+          aria-label='Click to open navigation menu.'
+        >
           <div className={`${styles.line} ${styles.line1}`}></div>
           <div className={`${styles.line} ${styles.line2}`}></div>
           <div className={`${styles.line} ${styles.line3}`}></div>

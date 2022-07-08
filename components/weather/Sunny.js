@@ -74,7 +74,7 @@ export default function Sunny({ isDay }) {
           <Image src='/images/weather/cloud-flat.png' alt='' width={383} height={169} />
         </div>
         <div className={styles.cloudRound}>
-          <Image src='/images/weather/cloud-round.png' alt='' width={386} height={224} />
+          <Image priority src='/images/weather/cloud-round.png' alt='' width={386} height={224} />
         </div>
       </div>
     </>
