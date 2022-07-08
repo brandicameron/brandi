@@ -38,8 +38,6 @@ export default function Rain({ weather }) {
         ))}
       </div>
       <Overcast />
-      {/* <div className={`${styles.cloudContainer} ${styles.cloudsOne}`}></div>
-      <div className={`${styles.cloudContainer} ${styles.cloudsTwo}`}></div> */}
     </>
   );
 }

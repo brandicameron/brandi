@@ -3,13 +3,34 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 150px;
   background-color: var(--primary);
   color: var(--white);
+  font-weight: var(--bold);
+}
+
+.footer ul {
+  display: flex;
+  gap: 3rem;
+  padding: 2rem 0;
+}
+
+.footer img {
+  filter: invert();
+}
+
+.footer a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer small {
+  padding-bottom: 2rem;
 }
 
 @media screen and (max-width: 600px) {
-  .footer {
-    padding-bottom: 3rem;
+  .footer ul {
+    gap: 2rem;
   }
 }

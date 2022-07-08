@@ -6,12 +6,12 @@
 
 .background {
   position: absolute;
-  top: 450px;
+  top: 475px;
   left: 0;
   width: 100vw;
   height: calc(100% - 450px);
   background-color: var(--primary);
-  clip-path: polygon(0 200px, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 175px, 100% 0, 100% 100%, 0 100%);
   z-index: -1;
 }
 
@@ -37,7 +37,7 @@
   align-items: stretch;
   gap: 2rem;
   max-width: 1200px;
-  margin: 4rem auto;
+  margin: 4rem auto 8rem auto;
 }
 
 .runner {
