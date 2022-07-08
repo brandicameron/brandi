@@ -1,7 +1,10 @@
 import { useState, useEffect } from 'react';
 
-export function useAstronomy(sunData) {
+export function useAstronomy(astroData) {
   const [isDay, setIsDay] = useState(true);
+  // fallbacks in case api call fails
+  const [sunrise, setSunrise] = useState('05:36');
+  const [sunset, setSunset] = useState('19:00');
 
   const convertTime = (timeValue) => {
     const [time, amPm] = timeValue.split(' ');
@@ -15,8 +18,13 @@ export function useAstronomy(sunData) {
     return `${hours}:${minutes}`;
   };
 
-  const sunrise = convertTime(sunData.sunrise);
-  const sunset = convertTime(sunData.sunset);
+  useEffect(() => {
+    if (astroData.astronomy) {
+      setSunrise(convertTime(astroData.astronomy.astro.sunrise));
+      setSunset(convertTime(astroData.astronomy.astro.sunset));
+    }
+  }, []);
+
   const currentTime = new Date().toLocaleTimeString('en-US', {
     hour: '2-digit',
     minute: '2-digit',

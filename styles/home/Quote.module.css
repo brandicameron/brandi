@@ -4,10 +4,8 @@
   align-items: center;
   background-color: var(--primary);
   color: var(--white);
-  padding: 10rem 0 17rem 0;
-  /* padding: var(--themePadding); */
-  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-  /* clip-path: var(--themeClipPath); */
+  padding: 8rem 0 17rem 0;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 }
 
 .quote {
@@ -20,20 +18,16 @@
 
 .rush,
 .free {
-  margin-top: 7px;
+  --shadow: rgb(44, 44, 207);
+  margin-top: 8px;
+  filter: drop-shadow(1px 1px 0px var(--shadow)) drop-shadow(2px 2px 0px var(--shadow))
+    drop-shadow(3px 3px 0px var(--shadow));
 }
 
-.free {
-  filter: drop-shadow(1px 1px 0px var(--white)) drop-shadow(2px 2px 0px var(--white))
-    drop-shadow(3px 3px 0px var(--white)) drop-shadow(5px 5px 0px var(--white))
-    drop-shadow(4px 4px 0px var(--white)) drop-shadow(6px 6px 0px var(--white));
-  /* drop-shadow(7px 7px 0px var(--white)) drop-shadow(8px 8px 0px var(--white)); */
-  /* drop-shadow(9px 9px 0px var(--white)) drop-shadow(10px 10px 0px var(--white)); */
-}
-
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 600px) {
   .container {
-    padding: 5rem 5vw 9rem 5vw;
+    padding: 4rem 5vw 8rem 5vw;
+    clip-path: polygon(0 0, 100% 0, 100% 88%, 0 100%);
   }
 
   .rush,
@@ -45,6 +39,7 @@
 
   .quote {
     font-size: 8vw;
+    transform: skewY(-10deg);
   }
 }
 

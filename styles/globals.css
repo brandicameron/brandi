@@ -37,12 +37,12 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   scroll-padding-top: 150px;
+  overflow-x: hidden;
 }
 
 body {
   font-weight: 400;
   color: var(--textColor);
-  overflow-x: hidden;
   background-color: var(--background);
 }
 
@@ -107,10 +107,6 @@ li {
   padding: 0;
 }
 
-i {
-  margin-right: 3px;
-}
-
 /* Utilities */
 
 *:focus-visible {
@@ -121,7 +117,6 @@ i {
 
 .main {
   position: relative;
-  top: 65px;
 }
 
 /* Global Buttons */
@@ -131,6 +126,7 @@ i {
   background-color: var(--white);
   color: var(--textColor);
   font-weight: var(--bold);
+  text-align: center;
   line-height: 105%;
   border-radius: var(--borderRadius);
   width: 100%;

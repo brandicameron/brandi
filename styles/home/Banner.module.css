@@ -1,7 +1,7 @@
 .container {
   position: relative;
   width: 100vw;
-  height: calc(100vh - 6px);
+  height: calc(100vh - 65px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -13,7 +13,7 @@
   position: relative;
   width: 90vw;
   max-width: 850px;
-  /* margin-top: 5vh; */
+  margin-top: 7rem;
 }
 
 .nameSvg {
@@ -52,7 +52,6 @@
   text-align: center;
   line-height: 1.5;
   margin-top: 0.5rem;
-  /* margin-top: 2rem; */
   color: var(--themeTextColor);
 }
 
@@ -70,16 +69,6 @@
   left: 44.4%;
 }
 
-.techIcons {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 85vw;
-  max-width: 700px;
-  margin-top: 50px;
-  margin-bottom: -50px;
-}
-
 @media screen and (max-width: 600px) {
   .container {
     height: 100vh;
@@ -87,11 +76,12 @@
   }
 
   .bannerContent {
-    top: 45px;
+    margin-top: 6rem;
   }
 
   .brandi {
-    transform: translateX(-44%) scale(0.9);
+    transform: translateX(-44%) scale(0.8);
+    left: 42%;
   }
 
   .dot {

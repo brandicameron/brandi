@@ -19,11 +19,7 @@ export default function Quote() {
           height='170'
         />
         from a job well done is
-        <motion.img
-          variants={free}
-          initial='initial'
-          whileInView={'animate'}
-          viewport={{ once: true, margin: '-75px' }}
+        <img
           aria-label='free'
           className={styles.free}
           src='/images/home/free.svg'
@@ -53,15 +49,15 @@ const rush = {
   },
 };
 
-const free = {
-  initial: {
-    scale: 0,
-  },
-  animate: {
-    scale: 1,
-    transition: {
-      duration: 0.25,
-      delay: 0.2,
-    },
-  },
-};
+// const free = {
+//   initial: {
+//     scale: 0,
+//   },
+//   animate: {
+//     scale: 1,
+//     transition: {
+//       duration: 0.25,
+//       delay: 0.2,
+//     },
+//   },
+// };

@@ -79,7 +79,7 @@ export default function About() {
           <a href='www.brandicameron.com' className='btn' target='blank' title='Resume'>
             <span className='btn-shadow'></span>
             <span className='btn-front'>
-              Resume
+              Resumé
               <img
                 alt=''
                 src='/images/icons/resume-icon.svg'

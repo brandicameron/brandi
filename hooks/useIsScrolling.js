@@ -22,7 +22,7 @@ export function useIsScrolling() {
     // Run after scrolling ends
     scrolling = setTimeout(() => {
       setIsScrolling(false);
-    }, 600);
+    }, 700);
   };
 
   return { isScrolling };

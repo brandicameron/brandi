@@ -18,7 +18,7 @@ export default function Layout({ children }) {
       </Head>
 
       <Nav />
-      <main className='main' id='skip-target'>
+      <main className='main' id='skipToContent'>
         {children}
       </main>
       <Footer />

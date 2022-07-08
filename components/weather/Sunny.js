@@ -17,6 +17,7 @@ export default function Sunny({ isDay }) {
               viewBox='0 0 245.7 238.6'
               width='100%'
               height='100%'
+              aria-label='Image of a rotating sunshine.'
             >
               <motion.path
                 variants={rays}
@@ -49,6 +50,7 @@ export default function Sunny({ isDay }) {
               viewBox='0 0 116 111.9'
               width='100%'
               height='100%'
+              aria-label='Image of a moon.'
             >
               <path
                 d='M115.2,81.9c1.6,2.3,0.6,3.8-0.4,5.3c-4,6.2-9.7,11.1-16.3,14.3c-9.2,4.3-18.6,8.5-28.7,9.9

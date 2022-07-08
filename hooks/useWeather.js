@@ -2,7 +2,15 @@ import { useState, useEffect } from 'react';
 
 export function useWeather(weatherData) {
   const [weather, setWeather] = useState('');
-  const weatherCode = weatherData.current.condition.code;
+  // fallback in case api call fails
+  const [weatherCode, setWeatherCode] = useState(1000);
+
+  useEffect(() => {
+    if (weatherData.current) {
+      setWeatherCode(weatherData.current.condition.code);
+    }
+  }, []);
+
   // TEST CODES
   // const weatherCode = 1000;
   // const weatherCode = 1006;
@@ -39,7 +47,7 @@ export function useWeather(weatherData) {
     } else {
       setWeather('sunny');
     }
-  }, []);
+  }, [weatherCode]);
 
   return { weather };
 }

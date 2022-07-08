@@ -8,7 +8,7 @@ export default function CTA() {
       <StripeBorder />
       <h2 aria-label='Hey, you should visit my code'>
         <span className={styles.heyText} aria-hidden></span>
-        Visit my code{' '}
+        visit my code{' '}
         <Link href='/playground'>
           <a>Playground </a>
         </Link>

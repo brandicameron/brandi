@@ -4,9 +4,8 @@ import Banner from '../components/home/Banner';
 import CTA from '../components/home/CTA';
 import Projects from '../components/home/Projects';
 import Quote from '../components/home/Quote';
-import BugCounter from '../components/shared/BugCounter';
 
-export default function Home({ weatherData, sunRiseSet }) {
+export default function Home({ weatherData, astroData }) {
   return (
     <>
       <Head>
@@ -16,12 +15,11 @@ export default function Home({ weatherData, sunRiseSet }) {
           content="Hi, I'm Brandi, a front-end developer and graphic designer in Nashville. I love creating projects that engage and delight users — let's make something cool together."
         />
       </Head>
-      <Banner weatherData={weatherData} sunRiseSet={sunRiseSet} />
+      <Banner weatherData={weatherData} astroData={astroData} />
       <Quote />
       <Projects />
       <CTA />
       <About />
-      <BugCounter />
     </>
   );
 }
@@ -40,12 +38,17 @@ export async function getServerSideProps() {
       mode: 'cors',
     }),
   ]);
-  const [weather, astro] = await Promise.all([weatherRes.json(), astroRes.json()]);
+
+  const [weather, astro] = await Promise.all([weatherRes.json(), astroRes.json()]).catch(
+    (error) => {
+      console.error(error.message);
+    }
+  );
 
   return {
     props: {
       weatherData: weather,
-      sunRiseSet: astro.astronomy.astro,
+      astroData: astro,
     },
   };
 }

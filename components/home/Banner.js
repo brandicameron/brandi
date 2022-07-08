@@ -1,22 +1,30 @@
 import styles from '../../styles/home/Banner.module.css';
+import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { useWeather } from '../../hooks/useWeather';
 import { useAstronomy } from '../../hooks/useAstronomy';
 import { useWeatherText } from '../../hooks/useWeatherText';
 import { useIsScrolling } from '../../hooks/useIsScrolling';
 import Weather from '../weather/Weather';
-import Bug from '../shared/Bug';
+import TechList from './TechList';
 
-export default function Banner({ weatherData, sunRiseSet }) {
+export default function Banner({ weatherData, astroData }) {
   const { weather } = useWeather(weatherData);
-  const { isDay } = useAstronomy(sunRiseSet);
+  const { isDay } = useAstronomy(astroData);
   const { condition } = useWeatherText(weather, isDay);
   const { isScrolling } = useIsScrolling();
-  const temp = parseInt(weatherData.current.temp_f) || 75;
+  const [temp, setTemp] = useState(60);
+
+  useEffect(() => {
+    if (weatherData.current) {
+      setTemp(parseInt(weatherData.current.temp_f));
+    }
+  }, [weatherData]);
 
   return (
     <section className={styles.container}>
-      <Weather weather={weather} isDay={isDay} />
+      {/* condition prevents flash of fallback sunshine */}
+      {condition && <Weather weather={weather} isDay={isDay} />}
       <div className={styles.bannerContent}>
         <h1 aria-label='Brandi, front-end developer, designer and domain hoarder.'>
           <span className={styles.name} aria-hidden>
@@ -38,7 +46,6 @@ export default function Banner({ weatherData, sunRiseSet }) {
               height={22}
             />
           </span>
-
           <span className={styles.title} aria-hidden>
             Front-end Developer & Domain Hoarder
           </span>
@@ -59,14 +66,7 @@ export default function Banner({ weatherData, sunRiseSet }) {
           )}
         </div>
       </div>
-      {/* <ul className={styles.techIcons} aria-label="Technologies that I'm proficient in:">
-        {techIcons.map((icon) => (
-          <li key={icon.title} title={icon.title} aria-label={icon.title}>
-            <img src={icon.src} alt='' width={35} height={35} />
-          </li>
-        ))}
-      </ul> */}
-      {/* <Bug /> */}
+      <TechList />
     </section>
   );
 }
@@ -82,58 +82,3 @@ const iDot = {
     },
   },
 };
-
-const techIcons = [
-  {
-    src: '/images/icons/html5-plain.svg',
-    title: 'HTML 5',
-  },
-  {
-    src: '/images/icons/css3-plain.svg',
-    title: 'CSS 3',
-  },
-  {
-    src: '/images/icons/javascript-plain.svg',
-    title: 'Javascript',
-  },
-  {
-    src: '/images/icons/react-plain.svg',
-    title: 'React',
-  },
-  {
-    src: '/images/icons/nextjs-plain.svg',
-    title: 'Next JS',
-  },
-  {
-    src: '/images/icons/firebase-plain.svg',
-    title: 'Firebase Auth, Firestore and Storage',
-  },
-  {
-    src: '/images/icons/gsap-plain.svg',
-    title: 'GSAP/Greensock',
-  },
-  {
-    src: '/images/icons/sass-plain.svg',
-    title: 'Sass',
-  },
-  {
-    src: '/images/icons/tailwind-plain.svg',
-    title: 'Tailwind CSS',
-  },
-  {
-    src: '/images/icons/a11y-plain.svg',
-    title: 'a11y Accessibility',
-  },
-  {
-    src: '/images/icons/shopify-plain.svg',
-    title: 'Shopify',
-  },
-  {
-    src: '/images/icons/photoshop-plain.svg',
-    title: 'Adobe Photoshop',
-  },
-  {
-    src: '/images/icons/illustrator-plain.svg',
-    title: 'Adobe Illustrator',
-  },
-];
