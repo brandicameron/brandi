@@ -107,6 +107,11 @@
 
 .homeBtn {
   filter: var(--invert);
+  transition: filter 300ms linear;
+}
+
+.homeBtn:hover {
+  transform: scale(0.98);
 }
 
 .navigation.open {

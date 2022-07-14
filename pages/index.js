@@ -26,24 +26,21 @@ export default function Home({ weatherData, astroData }) {
 
 export async function getServerSideProps() {
   const SECRET_KEY = process.env.SECRET_KEY;
-
-  const [weatherRes, astroRes] = await Promise.all([
-    fetch(
-      `http://api.weatherapi.com/v1/current.json?key=${SECRET_KEY}&q=Nashville&aqi=no&alerts=yes`,
-      {
-        mode: 'cors',
-      }
-    ),
-    fetch(`http://api.weatherapi.com/v1/astronomy.json?key=${SECRET_KEY}&q=Nashville`, {
+  const fetchWeather = fetch(
+    `http://api.weatherapi.com/v1/current.json?key=${SECRET_KEY}&q=Nashville&aqi=no&alerts=yes`,
+    {
       mode: 'cors',
-    }),
-  ]);
-
-  const [weather, astro] = await Promise.all([weatherRes.json(), astroRes.json()]).catch(
-    (error) => {
-      console.error(error.message);
     }
   );
+  const fetchAstro = fetch(
+    `http://api.weatherapi.com/v1/astronomy.json?key=${SECRET_KEY}&q=Nashville`,
+    {
+      mode: 'cors',
+    }
+  );
+
+  const [weatherRes, astroRes] = await Promise.all([fetchWeather, fetchAstro]);
+  const [weather, astro] = await Promise.all([weatherRes.json(), astroRes.json()]);
 
   return {
     props: {
