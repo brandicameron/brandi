@@ -4,11 +4,6 @@ import Footer from './Footer';
 import Nav from './Nav';
 
 export default function Layout({ children }) {
-  console.log(
-    '%cFind a bug? Email hello@brandicameron.com',
-    'background:white; color: #3e50ef; font-size:12px; font-weight: bold; padding:10px 15px; border-radius: 20px;'
-  );
-
   return (
     <>
       <Head>

@@ -30,19 +30,15 @@ export default function About() {
           </span>
         </p>
         <div style={{ display: toggled ? 'block' : 'none' }}>
-          {/* <p>
-              I work hard to create sites that are A11y compliant, fully responsive and
-              performant...bla bla bla
-            </p> */}
           <p>
             A former graphic designer, I spent 10 years building and maintaining a leading Photoshop
             template company for professional photographers. I conceptualized, designed and made
             market ready thousands of products including branding materials, social media graphics,
             greeting cards, albums and easy-to-use mock up templates. The e-commerce website was
-            initially built in Adobe Muse, and was later transferred to Shopify. It was working
-            within the confines of these no-code site builders that spurred my desire to learn
-            coding. With my first line of HTML I knew that writing code was without a doubt what I
-            would be doing for the rest of my life.
+            initially built in Adobe Muse, and was later rebuilt in Shopify. It was working within
+            the confines of these no-code site builders that spurred my desire to learn coding. With
+            my first line of HTML I knew that writing code was without a doubt what I would be doing
+            for the rest of my life.
           </p>
         </div>
         <p>
