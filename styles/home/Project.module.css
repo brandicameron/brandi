@@ -96,7 +96,7 @@
   gap: 10px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1100px) {
   .card,
   .card:nth-child(even) {
     flex-direction: column;
