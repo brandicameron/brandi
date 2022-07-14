@@ -5,7 +5,7 @@ import Nav from './Nav';
 
 export default function Layout({ children }) {
   console.log(
-    '%cFind a bug? Wanna chat? Email me @ hello@brandicameron.com',
+    '%cFind a bug? Email hello@brandicameron.com',
     'background:white; color: #3e50ef; font-size:12px; font-weight: bold; padding:10px 15px; border-radius: 20px;'
   );
 

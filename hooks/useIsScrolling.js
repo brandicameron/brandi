@@ -6,7 +6,7 @@ export function useIsScrolling() {
   useEffect(() => {
     const timer = setTimeout(() => {
       window.addEventListener('scroll', handleScroll);
-    }, 700);
+    }, 500);
 
     return () => {
       window.removeEventListener('scroll', handleScroll);
@@ -22,7 +22,7 @@ export function useIsScrolling() {
     // Run after scrolling ends
     scrolling = setTimeout(() => {
       setIsScrolling(false);
-    }, 700);
+    }, 500);
   };
 
   return { isScrolling };

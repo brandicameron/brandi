@@ -10,7 +10,7 @@ export default function Quote() {
           variants={rush}
           initial='initial'
           whileInView={'animate'}
-          viewport={{ once: true }}
+          // viewport={{ once: true }}
           aria-label='rush'
           className={styles.rush}
           src='/images/home/rush.svg'
@@ -43,11 +43,27 @@ const rush = {
     transition: {
       type: 'spring',
       stiffness: 100,
-      duration: 0.75,
-      bounce: 2,
+      duration: 0.1,
+      bounce: 1,
     },
   },
 };
+// const rush = {
+//   initial: {
+//     skewX: 75,
+//     x: '-50vw',
+//   },
+//   animate: {
+//     skewX: 0,
+//     x: 0,
+//     transition: {
+//       type: 'spring',
+//       stiffness: 100,
+//       duration: 0.75,
+//       bounce: 2,
+//     },
+//   },
+// };
 
 // const free = {
 //   initial: {

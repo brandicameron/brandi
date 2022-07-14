@@ -6,7 +6,6 @@ import { useAstronomy } from '../../hooks/useAstronomy';
 import { useWeatherText } from '../../hooks/useWeatherText';
 import { useIsScrolling } from '../../hooks/useIsScrolling';
 import Weather from '../weather/Weather';
-import TechList from './TechList';
 
 export default function Banner({ weatherData, astroData }) {
   const { weather } = useWeather(weatherData);
@@ -66,7 +65,6 @@ export default function Banner({ weatherData, astroData }) {
           )}
         </div>
       </div>
-      <TechList />
     </section>
   );
 }
