@@ -71,7 +71,7 @@ const nav = [
     href: '/#projects',
   },
   {
-    name: 'Play',
+    name: 'Playground',
     href: '/playground',
   },
   {
