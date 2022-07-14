@@ -16,23 +16,15 @@
   color: var(--primary);
 }
 
-/* for hover underline */
-.ctaContainer h2 a::after {
+.underline {
   position: absolute;
-  content: '';
   left: 0;
-  bottom: -5px;
-  width: 100%;
-  transform: scaleX(0);
+  bottom: -6px;
+  width: 96%;
   height: 6px;
   background-color: var(--primary);
   border-radius: 1px;
-  transition: transform 75ms linear;
   transform-origin: left;
-}
-
-.ctaContainer h2 a:hover::after {
-  transform: scaleX(1);
 }
 
 .heyText {
