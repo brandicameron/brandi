@@ -6,10 +6,10 @@
 
 .background {
   position: absolute;
-  top: 475px;
+  bottom: 0;
   left: 0;
   width: 100vw;
-  height: calc(100% - 450px);
+  height: calc(100% - 550px);
   background-color: var(--primary);
   clip-path: polygon(0 175px, 100% 0, 100% 100%, 0 100%);
   z-index: -1;
@@ -42,7 +42,7 @@
 
 .runner {
   position: absolute;
-  bottom: 0;
+  bottom: 30px;
   font-size: var(--med);
   font-weight: var(--bold);
   background-color: var(--background);
@@ -64,8 +64,7 @@
   }
 
   .background {
-    height: calc(100% - 200px);
-    top: 400px;
+    height: calc(100% - 450px);
     clip-path: polygon(0 80px, 100% 0, 100% 100%, 0 100%);
   }
 

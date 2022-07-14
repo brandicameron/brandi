@@ -6,7 +6,7 @@ import ProjectCard from '../components/playground/ProjectCard';
 
 export default function Playground() {
   const { scrollY } = useViewportScroll();
-  const xLeft = useTransform(scrollY, [0, 4000], ['-50%', '0vw']);
+  const xLeft = useTransform(scrollY, [0, 4000], ['-80%', '0vw']);
 
   return (
     <>
