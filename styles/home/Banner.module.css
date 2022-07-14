@@ -75,10 +75,6 @@
     top: 0;
   }
 
-  .bannerContent {
-    margin-top: 6rem;
-  }
-
   .brandi {
     transform: translateX(-44%) scale(0.8);
     left: 42%;
@@ -90,6 +86,13 @@
 
   .surprise {
     left: 42.9%;
+  }
+}
+
+/* Landscape Tablet */
+@media screen and (pointer: coarse) and (orientation: landscape) {
+  .bannerContent {
+    margin-top: 4rem;
   }
 }
 
