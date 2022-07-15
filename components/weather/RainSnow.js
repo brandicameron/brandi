@@ -1,4 +1,4 @@
-import styles from '../../styles/weather/Rain.module.css';
+import styles from '../../styles/weather/RainSnow.module.css';
 import { useState, useEffect } from 'react';
 import Overcast from './Overcast';
 
