@@ -1,7 +1,7 @@
 import styles from '../../styles/playground/ProjectCard.module.css';
 import Image from 'next/image';
 import { v4 as uuidv4 } from 'uuid';
-import ProjectBtn from '../shared/ProjectBtn';
+import LinkBtn from '../shared/LinkBtn';
 
 export default function ProjectCard({ project }) {
   return (
@@ -16,12 +16,13 @@ export default function ProjectCard({ project }) {
         ))}
         <nav className={styles.projectBtns}>
           {project.buttons.map((button) => (
-            <ProjectBtn
+            <LinkBtn
               key={uuidv4()}
               href={button.href}
               title={button.title}
               icon={button.icon}
               ariaLabel={button.ariaLabel}
+              src={button.src}
             />
           ))}
         </nav>

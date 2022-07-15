@@ -1,0 +1,88 @@
+.btn {
+  position: relative;
+  background-color: var(--white);
+  color: var(--textColor);
+  font-weight: var(--bold);
+  text-align: center;
+  line-height: 105%;
+  border-radius: var(--borderRadius);
+  width: 100%;
+  min-width: 120px;
+  height: 50px;
+  padding: 0 10px;
+  box-shadow: 15px 20px 30px -20px rgb(34, 34, 34);
+}
+
+.btn.lg {
+  font-size: var(--med);
+  width: 85vw;
+  max-width: 375px;
+}
+
+.btn + .btn {
+  margin-left: 5px;
+}
+
+.btnShadow {
+  position: absolute;
+  background: var(--textColor);
+  height: 100%;
+  width: 100%;
+  border-radius: var(--borderRadius);
+  bottom: -4px;
+  right: -3px;
+}
+
+.btnFront {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: var(--borderRadius);
+  background-color: var(--background);
+  border: 3px solid var(--textColor);
+  transition: 75ms ease-in;
+}
+
+.btnFront:hover {
+  transform: translateY(-2px) translateX(-2px);
+  background: var(--primary);
+  color: var(--white);
+}
+
+.btnFront:hover .icon {
+  filter: invert(1) brightness(1.5);
+}
+
+.btnFront:active {
+  outline: none;
+  transform: translateY(3px) translateX(2px);
+}
+
+@media screen and (max-width: 600px) {
+  .btn {
+    height: 55px;
+  }
+
+  .btnShadow {
+    bottom: -5px;
+    right: -4px;
+  }
+}
+
+/* Landscape Mobile */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  .btn {
+    height: 55px;
+  }
+
+  .btnShadow {
+    bottom: -5px;
+    right: -4px;
+  }
+}

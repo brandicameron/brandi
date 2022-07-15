@@ -118,74 +118,6 @@ li {
   position: relative;
 }
 
-/* Global Buttons */
-
-.btn {
-  position: relative;
-  background-color: var(--white);
-  color: var(--textColor);
-  font-weight: var(--bold);
-  text-align: center;
-  line-height: 105%;
-  border-radius: var(--borderRadius);
-  width: 100%;
-  min-width: 120px;
-  height: 50px;
-  padding: 0 10px;
-  box-shadow: 15px 20px 30px -20px rgb(34, 34, 34);
-}
-
-.btn.lg {
-  font-size: var(--med);
-  width: 85vw;
-  max-width: 375px;
-}
-
-.btn + .btn {
-  margin-left: 5px;
-}
-
-.btn-shadow {
-  position: absolute;
-  background: var(--textColor);
-  height: 100%;
-  width: 100%;
-  border-radius: var(--borderRadius);
-  bottom: -4px;
-  right: -3px;
-}
-
-.btn-front {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  border-radius: var(--borderRadius);
-  background-color: var(--background);
-  border: 3px solid var(--textColor);
-  transition: 75ms ease-in;
-}
-
-.btn-front:hover {
-  transform: translateY(-2px) translateX(-2px);
-  background: var(--primary);
-  color: var(--white);
-}
-
-.btn-front:hover .icon {
-  filter: invert(1) brightness(1.5);
-}
-
-.btn-front:active {
-  outline: none;
-  transform: translateY(3px) translateX(2px);
-}
-
 @media screen and (max-width: 600px) {
   .main {
     position: relative;
@@ -196,15 +128,6 @@ li {
 
   .mobile-break {
     display: block;
-  }
-
-  .btn {
-    height: 55px;
-  }
-
-  .btn-shadow {
-    bottom: -5px;
-    right: -4px;
   }
 }
 
@@ -219,14 +142,5 @@ li {
 
   .mobile-break {
     display: block;
-  }
-
-  .btn {
-    height: 55px;
-  }
-
-  .btn-shadow {
-    bottom: -5px;
-    right: -4px;
   }
 }

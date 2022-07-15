@@ -1,7 +1,7 @@
 import styles from '../../styles/home/Project.module.css';
 import Image from 'next/image';
 import { v4 as uuidv4 } from 'uuid';
-import ProjectBtn from '../shared/ProjectBtn';
+import LinkBtn from '../shared/LinkBtn';
 import { motion } from 'framer-motion';
 
 export default function Project({ project }) {
@@ -60,11 +60,12 @@ export default function Project({ project }) {
 
         <nav className={styles.projectNav}>
           {project.buttons.map((button) => (
-            <ProjectBtn
+            <LinkBtn
               key={uuidv4()}
               href={button.href}
               title={button.title}
               ariaLabel={button.ariaLabel}
+              src={button.src}
             />
           ))}
         </nav>

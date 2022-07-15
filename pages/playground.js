@@ -43,11 +43,13 @@ export default function Playground() {
           className={styles.runner}
           aria-label='All work and no play makes Brandi a dull girl.'
         >
-          All work and no play makes Brandi a dull girl. &nbsp; &nbsp; All work and no play makes
-          Brandi a dull girl. &nbsp; &nbsp;All work and no play makes Brandi a dull girl. &nbsp;
-          &nbsp;All work and no play makes Brandi a dull girl. &nbsp; &nbsp;All work and no play
-          makes Brandi a dull girl.&nbsp; &nbsp; All work and no play makes Brandi a dull girl.
-          &nbsp; &nbsp;All work and no play makes Brandi a dull girl.
+          <span aria-hidden>
+            All work and no play makes Brandi a dull girl. &nbsp; &nbsp; All work and no play makes
+            Brandi a dull girl. &nbsp; &nbsp;All work and no play makes Brandi a dull girl. &nbsp;
+            &nbsp;All work and no play makes Brandi a dull girl. &nbsp; &nbsp;All work and no play
+            makes Brandi a dull girl.&nbsp; &nbsp; All work and no play makes Brandi a dull girl.
+            &nbsp; &nbsp;All work and no play makes Brandi a dull girl.
+          </span>
         </motion.p>
       </section>
     </>
@@ -82,11 +84,13 @@ const playProjects = [
         title: 'Live',
         href: 'https://brandicameron.github.io/texting-test/',
         ariaLabel: 'View this project live, opens in a new window.',
+        src: '/images/icons/new-window.svg',
       },
       {
         title: 'Code',
         href: 'https://github.com/brandicameron/texting-test',
         ariaLabel: 'View this project on github, opens in a new window.',
+        src: '/images/icons/github-icon.svg',
       },
     ],
   },
@@ -103,11 +107,13 @@ const playProjects = [
         title: 'Live',
         href: 'https://brandicameron.github.io/hangcole/',
         ariaLabel: 'View this project live, opens in a new window.',
+        src: '/images/icons/new-window.svg',
       },
       {
         title: 'Code',
         href: 'https://github.com/brandicameron/hangcole',
         ariaLabel: 'View this project on github, opens in a new window.',
+        src: '/images/icons/github-icon.svg',
       },
     ],
   },
@@ -124,11 +130,13 @@ const playProjects = [
         title: 'Live',
         href: 'https://brandicameron.github.io/monster-match/',
         ariaLabel: 'View this project live, opens in a new window.',
+        src: '/images/icons/new-window.svg',
       },
       {
         title: 'Code',
         href: 'https://github.com/brandicameron/monster-match',
         ariaLabel: 'View this project on github, opens in a new window.',
+        src: '/images/icons/github-icon.svg',
       },
     ],
   },
@@ -145,11 +153,13 @@ const playProjects = [
         title: 'Live',
         href: 'https://brandicameron.github.io/us-map-quiz/',
         ariaLabel: 'View this project live, opens in a new window.',
+        src: '/images/icons/new-window.svg',
       },
       {
         title: 'Code',
         href: 'https://github.com/brandicameron/us-map-quiz',
         ariaLabel: 'View this project on github, opens in a new window.',
+        src: '/images/icons/github-icon.svg',
       },
     ],
   },
@@ -166,11 +176,13 @@ const playProjects = [
         title: 'Live',
         href: 'https://brandicameron.github.io/us-map-quiz/',
         ariaLabel: 'View this project live, opens in a new window.',
+        src: '/images/icons/new-window.svg',
       },
       {
         title: 'Code',
         href: 'https://github.com/brandicameron/us-map-quiz',
         ariaLabel: 'View this project on github, opens in a new window.',
+        src: '/images/icons/github-icon.svg',
       },
     ],
   },
@@ -184,11 +196,13 @@ const playProjects = [
         title: 'Live',
         href: 'https://brandicameron.github.io/wordy-clock/',
         ariaLabel: 'View this project live, opens in a new window.',
+        src: '/images/icons/new-window.svg',
       },
       {
         title: 'Code',
         href: 'https://github.com/brandicameron/wordy-clock',
         ariaLabel: 'View this project on github, opens in a new window.',
+        src: '/images/icons/github-icon.svg',
       },
     ],
   },

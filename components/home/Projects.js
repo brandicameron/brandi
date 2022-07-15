@@ -1,4 +1,5 @@
-import styles from '../../styles/home/Projects.module.css';
+import style from '../../styles/home/Projects.module.css';
+import styles from '../../styles/shared/Buttons.module.css';
 import { useState, useEffect } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import Project from './Project';
@@ -12,7 +13,6 @@ export default function Projects() {
   }, []);
 
   const handleViewMore = () => {
-    // clickSound.play();
     clickSound.volume = 0.1;
     clickSound.play();
     if (numProjectsShown === 3) {
@@ -23,17 +23,17 @@ export default function Projects() {
   };
 
   return (
-    <section className={styles.container} id='projects'>
-      <ul className={styles.projects}>
+    <section className={style.container} id='projects'>
+      <ul className={style.projects}>
         {projects.slice(0, numProjectsShown).map((project) => (
-          <li className={styles.project} key={uuidv4()}>
+          <li className={style.project} key={uuidv4()}>
             <Project project={project} />
           </li>
         ))}
       </ul>
-      <button className='btn lg' onClick={handleViewMore}>
-        <span className='btn-shadow'></span>
-        <span className='btn-front'>
+      <button className={`${styles.btn} ${styles.lg}`} onClick={handleViewMore}>
+        <span className={styles.btnShadow}></span>
+        <span className={styles.btnFront}>
           {numProjectsShown === 3 ? 'View More Projects' : 'View Less Projects'}
         </span>
       </button>
@@ -62,11 +62,13 @@ const projects = [
         title: 'Live',
         href: 'https://nosh.brandicameron.com',
         ariaLabel: 'View this project live, opens in a new window.',
+        src: '/images/icons/new-window.svg',
       },
       {
         title: 'Code',
         href: 'https://github.com/brandicameron/nosh',
         ariaLabel: 'View this project on github, opens in a new window.',
+        src: '/images/icons/github-icon.svg',
       },
     ],
   },
@@ -88,11 +90,13 @@ const projects = [
         title: 'Live',
         href: 'https://brandicameron.github.io/blackjack/',
         ariaLabel: 'View this project live, opens in a new window.',
+        src: '/images/icons/new-window.svg',
       },
       {
         title: 'Code',
         href: 'https://github.com/brandicameron/blackjack',
         ariaLabel: 'View this project on github, opens in a new window.',
+        src: '/images/icons/github-icon.svg',
       },
     ],
   },
@@ -113,11 +117,13 @@ const projects = [
         title: 'Live',
         href: 'https://cleanandgreennashville.com/',
         ariaLabel: 'View this project live, opens in a new window.',
+        src: '/images/icons/new-window.svg',
       },
       {
         title: 'Code',
         href: 'https://github.com/brandicameron/cg',
         ariaLabel: 'View this project on github, opens in a new window.',
+        src: '/images/icons/github-icon.svg',
       },
     ],
   },
@@ -138,11 +144,13 @@ const projects = [
         title: 'Live',
         href: 'https://brandicameron.github.io/bp-react/',
         ariaLabel: 'View this project live, opens in a new window.',
+        src: '/images/icons/new-window.svg',
       },
       {
         title: 'Code',
         href: 'https://github.com/brandicameron/bp-react/tree/master',
         ariaLabel: 'View this project on github, opens in a new window.',
+        src: '/images/icons/github-icon.svg',
       },
     ],
   },
@@ -164,11 +172,13 @@ const projects = [
         title: 'Live',
         href: 'https://cameronhomeinspection.com/',
         ariaLabel: 'View this project live, opens in a new window.',
+        src: '/images/icons/new-window.svg',
       },
       {
         title: 'Code',
         href: 'https://github.com/brandicameron/cameron-inspection',
         ariaLabel: 'View this project on github, opens in a new window.',
+        src: '/images/icons/github-icon.svg',
       },
     ],
   },
@@ -189,11 +199,13 @@ const projects = [
         title: 'Live',
         href: 'https://brandicameron.github.io/etchasketch/',
         ariaLabel: 'View this project live, opens in a new window.',
+        src: '/images/icons/new-window.svg',
       },
       {
         title: 'Code',
         href: 'https://github.com/brandicameron/etchasketch',
         ariaLabel: 'View this project on github, opens in a new window.',
+        src: '/images/icons/github-icon.svg',
       },
     ],
   },

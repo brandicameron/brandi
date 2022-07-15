@@ -1,7 +1,7 @@
 import styles from '../../styles/home/About.module.css';
 import { useState } from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
+import LinkBtn from '../shared/LinkBtn';
 
 export default function About() {
   const [toggled, setToggled] = useState(false);
@@ -54,68 +54,16 @@ export default function About() {
           — let&apos;s create some cool things together!
         </p>
         <div className={styles.buttons} id='contact'>
-          <a
-            href='mailto:hello@brandicameron.com?subject=Hi%20Brandi!'
-            className='btn'
-            target='blank'
-            title='Email Brandi'
-          >
-            <span className='btn-shadow'></span>
-            <span className='btn-front'>
-              Email
-              <img
-                alt=''
-                src='/images/icons/email-icon.svg'
-                width={25}
-                height={25}
-                className='icon'
-              />
-            </span>
-          </a>
-          <a href='www.brandicameron.com' className='btn' target='blank' title='Resume'>
-            <span className='btn-shadow'></span>
-            <span className='btn-front'>
-              Resumé
-              <img
-                alt=''
-                src='/images/icons/resume-icon.svg'
-                width={25}
-                height={25}
-                className='icon'
-              />
-            </span>
-          </a>
-          <a href='https://github.com/brandicameron' className='btn' target='blank' title='Github'>
-            <span className='btn-shadow'></span>
-            <span className='btn-front'>
-              Github
-              <img
-                alt=''
-                src='/images/icons/github-icon.svg'
-                width={25}
-                height={25}
-                className='icon'
-              />
-            </span>
-          </a>
-          <a
-            href='https://zoo.sandiegozoo.org/cams/koala-cam'
-            className='btn'
-            target='blank'
-            title='View Live Koala Cam'
-          >
-            <span className='btn-shadow'></span>
-            <span className='btn-front'>
-              Koala Cam
-              <img
-                alt=''
-                src='/images/icons/koala-icon.svg'
-                width={25}
-                height={25}
-                className='icon'
-              />
-            </span>
-          </a>
+          {linkButtons.map((button) => (
+            <LinkBtn
+              key={button.title}
+              href={button.href}
+              title={button.title}
+              icon={button.icon}
+              ariaLabel={button.ariaLabel}
+              src={button.src}
+            />
+          ))}
         </div>
       </div>
       <div className={styles.brandi}>
@@ -124,3 +72,30 @@ export default function About() {
     </section>
   );
 }
+
+const linkButtons = [
+  {
+    title: 'Email',
+    href: 'mailto:hello@brandicameron.com?subject=Hi%20Brandi!',
+    ariaLabel: 'Email Brandi.',
+    src: '/images/icons/email-icon.svg',
+  },
+  {
+    title: 'Resumé',
+    href: 'www.brandicameron.com',
+    ariaLabel: "View PDF of Brandi's resumé, opens in a new window.",
+    src: '/images/icons/resume-icon.svg',
+  },
+  {
+    title: 'Github',
+    href: 'https://github.com/brandicameron',
+    ariaLabel: "View Brandi's github, opens in a new window.",
+    src: '/images/icons/github-icon.svg',
+  },
+  {
+    title: 'Koala Cam',
+    href: 'https://zoo.sandiegozoo.org/cams/koala-cam',
+    ariaLabel: 'View a live Koala cam, opens in a new window.',
+    src: '/images/icons/koala-icon.svg',
+  },
+];
