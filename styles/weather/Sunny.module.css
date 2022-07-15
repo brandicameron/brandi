@@ -43,12 +43,12 @@
 .cloudRound {
   top: 15vh;
   animation: float 240s linear infinite;
-  animation-delay: -100s;
+  animation-delay: -150s;
 }
 
 @keyframes float {
   0% {
-    transform: translateX(-400px);
+    transform: translateX(-50vw);
   }
   100% {
     transform: translateX(100vw);
@@ -72,13 +72,11 @@
 
   .cloudFlat {
     top: 3vh;
-    animation: float 240s linear infinite;
     animation-delay: -100s;
   }
 
   .cloudRound {
     top: 11vh;
-    animation: float 240s linear infinite;
     animation-delay: -350s;
   }
 }
