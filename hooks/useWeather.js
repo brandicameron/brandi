@@ -8,16 +8,15 @@ export function useWeather(weatherData) {
   useEffect(() => {
     if (weatherData.current) {
       setWeatherCode(weatherData.current.condition.code);
+      // TESTING CODES
+      // setWeatherCode(1006);
+      // setWeatherCode(1009);
+      // setWeatherCode(1243);
+      // setWeatherCode(1273);
+      // setWeatherCode(1207);
     }
   }, []);
 
-  // TEST CODES
-  // const weatherCode = 1000;
-  // const weatherCode = 1006;
-  // const weatherCode = 1009;
-  // const weatherCode = 1243;
-  // const weatherCode = 1273;
-  // const weatherCode = 1207;
   const sunnyCodes = [1000, 1003];
   const cloudyCodes = [1006];
   const overcastCodes = [1009, 1135, 1147];

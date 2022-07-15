@@ -48,7 +48,10 @@ export default function Playground() {
             Brandi a dull girl. &nbsp; &nbsp;All work and no play makes Brandi a dull girl. &nbsp;
             &nbsp;All work and no play makes Brandi a dull girl. &nbsp; &nbsp;All work and no play
             makes Brandi a dull girl.&nbsp; &nbsp; All work and no play makes Brandi a dull girl.
-            &nbsp; &nbsp;All work and no play makes Brandi a dull girl.
+            &nbsp; &nbsp;All work and no play makes Brandi a dull girl. &nbsp; &nbsp;All work and no
+            play makes Brandi a dull girl. &nbsp; &nbsp;All work and no play makes Brandi a dull
+            girl.&nbsp; &nbsp; All work and no play makes Brandi a dull girl. &nbsp; &nbsp;All work
+            and no play makes Brandi a dull girl.
           </span>
         </motion.p>
       </section>
