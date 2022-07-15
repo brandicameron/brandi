@@ -1,4 +1,4 @@
-import Rain from './Rain';
+import RainSnow from './RainSnow';
 import Sunny from './Sunny';
 import Cloudy from './Cloudy';
 import Overcast from './Overcast';
@@ -10,9 +10,9 @@ export default function Weather({ weather, isDay }) {
       {weather === 'sunny' && <Sunny isDay={isDay} />}
       {weather === 'cloudy' && <Cloudy />}
       {weather === 'overcast' && <Overcast weather={weather} />}
-      {weather === 'rain' && <Rain />}
+      {weather === 'rain' && <RainSnow />}
       {weather === 'stormy' && <Stormy />}
-      {weather === 'snow' && <Rain weather={weather} />}
+      {weather === 'snow' && <RainSnow weather={weather} />}
     </>
   );
 }

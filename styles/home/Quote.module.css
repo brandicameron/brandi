@@ -19,8 +19,8 @@
 
 .rush,
 .free {
-  margin-top: 8px;
   --shadow: #2c2ccf;
+  margin-top: 8px;
   filter: drop-shadow(1px 1px 0px var(--shadow)) drop-shadow(2px 2px 0px var(--shadow))
     drop-shadow(3px 3px 0px var(--shadow));
 }

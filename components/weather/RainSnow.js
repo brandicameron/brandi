@@ -2,7 +2,7 @@ import styles from '../../styles/weather/Rain.module.css';
 import { useState, useEffect } from 'react';
 import Overcast from './Overcast';
 
-export default function Rain({ weather }) {
+export default function RainSnow({ weather }) {
   const [rainDrops, setRainDrops] = useState([]);
 
   function getRandomNumber(min, max) {
