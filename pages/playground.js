@@ -177,13 +177,13 @@ const playProjects = [
     buttons: [
       {
         title: 'Live',
-        href: 'https://brandicameron.github.io/us-map-quiz/',
+        href: 'https://brandicameron.github.io/statues/',
         ariaLabel: 'View this project live, opens in a new window.',
         src: '/images/icons/new-window.svg',
       },
       {
         title: 'Code',
-        href: 'https://github.com/brandicameron/us-map-quiz',
+        href: 'https://github.com/brandicameron/statues',
         ariaLabel: 'View this project on github, opens in a new window.',
         src: '/images/icons/github-icon.svg',
       },
