@@ -16,7 +16,7 @@ export default function Projects() {
     clickSound.volume = 0.1;
     clickSound.play();
     if (numProjectsShown === 3) {
-      setNumProjectsShown(6);
+      setNumProjectsShown(projects.length);
     } else {
       setNumProjectsShown(3);
     }

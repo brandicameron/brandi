@@ -12,6 +12,9 @@ export default function About() {
 
   return (
     <section className={styles.about} id='about'>
+      <div className={styles.brandi}>
+        <Image src='/images/about/brandi-round.png' width={215} height={230} alt='Brandi Cameron' />
+      </div>
       <div className={styles.content}>
         <h2>Hi, I&apos;m Brandi.</h2>
         <div className={toggled ? `${styles.toggle} ${styles.clicked}` : `${styles.toggle}`}>
@@ -65,9 +68,6 @@ export default function About() {
             />
           ))}
         </div>
-      </div>
-      <div className={styles.brandi}>
-        <Image src='/images/about/brandi-round.png' width={215} height={230} alt='Brandi Cameron' />
       </div>
     </section>
   );
