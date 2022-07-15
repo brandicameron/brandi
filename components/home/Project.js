@@ -58,7 +58,7 @@ export default function Project({ project }) {
           </ul>
         )}
 
-        <nav className={styles.projectNav}>
+        <div className={styles.projectBtns}>
           {project.buttons.map((button) => (
             <LinkBtn
               key={uuidv4()}
@@ -68,7 +68,7 @@ export default function Project({ project }) {
               src={button.src}
             />
           ))}
-        </nav>
+        </div>
       </section>
     </article>
   );

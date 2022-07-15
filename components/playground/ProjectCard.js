@@ -14,7 +14,7 @@ export default function ProjectCard({ project }) {
         {project.description.map((p) => (
           <p key={uuidv4()}>{p}</p>
         ))}
-        <nav className={styles.projectBtns}>
+        <div className={styles.projectBtns}>
           {project.buttons.map((button) => (
             <LinkBtn
               key={uuidv4()}
@@ -25,7 +25,7 @@ export default function ProjectCard({ project }) {
               src={button.src}
             />
           ))}
-        </nav>
+        </div>
       </div>
     </article>
   );

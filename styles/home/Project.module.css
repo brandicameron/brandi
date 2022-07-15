@@ -88,7 +88,7 @@
   margin-bottom: 10px;
 }
 
-.projectNav {
+.projectBtns {
   display: flex;
   width: 100%;
   margin: 1.5rem 0;
@@ -128,7 +128,7 @@
     margin: 0.75rem auto 1rem auto;
   }
 
-  .projectNav {
+  .projectBtns {
     width: 100%;
   }
 }
