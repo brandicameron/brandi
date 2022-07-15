@@ -19,24 +19,14 @@ export default function Footer() {
                 </a>
               </Link>
             </li>
-            <li>
-              <a href='mailto:hello@brandicameron.com?subject=Hi%20Brandi!'>
-                <img src='./images/icons/email-icon.svg' alt='' height='40' width='40' />
-                Email
-              </a>
-            </li>
-            <li>
-              <a href='www.brandicameron.com'>
-                <img src='./images/icons/resume-icon.svg' alt='' height='40' width='40' />
-                Resumé
-              </a>
-            </li>
-            <li>
-              <a href='https://github.com/brandicameron'>
-                <img src='/images/icons/github-icon.svg' alt='' height='40' width='40' />
-                Github
-              </a>
-            </li>
+            {footerLinks.map((link) => (
+              <li key={link.title}>
+                <a href={link.href} target='blank'>
+                  <img src={link.src} alt='' height='40' width='40' />
+                  {link.title}
+                </a>
+              </li>
+            ))}
           </ul>
         </nav>
         <small>© {currentYear} Brandi Cameron</small>
@@ -44,3 +34,21 @@ export default function Footer() {
     </>
   );
 }
+
+const footerLinks = [
+  {
+    href: 'mailto:hello@brandicameron.com?subject=Hi%20Brandi!',
+    src: './images/icons/email-icon.svg',
+    title: 'Email',
+  },
+  {
+    href: '/',
+    src: './images/icons/resume-icon.svg',
+    title: 'Resumé',
+  },
+  {
+    href: 'https://github.com/brandicameron',
+    src: '/images/icons/github-icon.svg',
+    title: 'Github',
+  },
+];
