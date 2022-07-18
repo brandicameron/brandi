@@ -34,13 +34,16 @@ export default function About() {
         </p>
         <div style={{ display: toggled ? 'block' : 'none' }}>
           <p>
-            A former graphic designer, I spent 10 years building and maintaining a leading Photoshop
-            template company for professional photographers. I conceptualized, designed and made
-            market ready thousands of products including branding materials, social media graphics,
-            greeting cards, albums and easy-to-use mock up templates. The e-commerce website was
-            initially built in Adobe Muse, and was later rebuilt in Shopify. It was working within
-            the confines of these no-code site builders that spurred my desire to learn coding. With
-            my first line of HTML I knew that writing code was without a doubt what I would be doing
+            A former graphic designer, I spent 10 years building and maintaining a{' '}
+            <a className={styles.inlineLink} href='https://3dollartemplates.com/' target='blank'>
+              leading Photoshop template company
+            </a>{' '}
+            for professional photographers. I conceptualized, designed and made market ready
+            thousands of products including branding materials, social media graphics, greeting
+            cards, albums and easy-to-use mock up templates. The e-commerce website was initially
+            built in Adobe Muse, and was later rebuilt in Shopify. It was working within the
+            confines of these no-code site builders that spurred my desire to learn coding. With my
+            first line of HTML I knew that writing code was without a doubt what I would be doing
             for the rest of my life.
           </p>
         </div>
@@ -51,7 +54,10 @@ export default function About() {
             &nbsp; If you feel that my skill set and commitment to excellence would contribute to
             your team,{' '}
           </span>
-          <a href='mailto:hello@brandicameron.com?subject=Hi%20Brandi!' className={styles.reachOut}>
+          <a
+            href='mailto:hello@brandicameron.com?subject=Hi%20Brandi!'
+            className={styles.inlineLink}
+          >
             {toggled ? 'reach out' : ' Reach out'}
           </a>{' '}
           — let&apos;s create some cool things together!

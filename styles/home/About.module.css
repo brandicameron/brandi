@@ -84,14 +84,14 @@
   margin-top: 1rem;
 }
 
-.reachOut {
+.inlineLink {
   font-weight: var(--bold);
   text-decoration: underline;
   text-underline-offset: 3px;
   text-decoration-thickness: 2px;
 }
 
-.reachOut:hover {
+.inlineLink:hover {
   opacity: 0.9;
 }
 

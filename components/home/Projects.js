@@ -43,7 +43,7 @@ export default function Projects() {
 
 const projects = [
   {
-    title: 'Recipe App',
+    title: 'Family Recipe App',
     contribution: 'Design | Development',
     technologies: ['Next.js', 'Firebase', 'Tailwind'],
     ipad: '/images/projects/nosh-ipad.png',

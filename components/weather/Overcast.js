@@ -8,7 +8,7 @@ export default function Overcast({ weather }) {
       <div className={`${styles.cloudContainer} ${styles.cloudsTwo}`}></div>
       {weather === 'overcast' && (
         <div className={styles.cloudSmall}>
-          <Image src='/images/weather/cloud-round.png' alt='' width={386} height={224} />
+          <Image src='/images/weather/cloud-round.png' priority alt='' width={386} height={224} />
         </div>
       )}
     </div>
