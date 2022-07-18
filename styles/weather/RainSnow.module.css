@@ -17,7 +17,6 @@
   animation-timing-function: linear;
   animation-duration: 2s;
   animation-iteration-count: infinite;
-  will-change: transform;
 }
 
 @keyframes rain {

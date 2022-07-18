@@ -1,6 +1,7 @@
 import styles from '../../styles/weather/RainSnow.module.css';
 import { useState, useEffect } from 'react';
 import Overcast from './Overcast';
+import { v4 as uuidv4 } from 'uuid';
 
 export default function RainSnow({ weather }) {
   const [rainDrops, setRainDrops] = useState([]);
@@ -22,9 +23,9 @@ export default function RainSnow({ weather }) {
   return (
     <>
       <div className={styles.rainContainer}>
-        {rainDrops.map((index) => (
+        {rainDrops.map(() => (
           <div
-            key={index}
+            key={uuidv4()}
             className={styles.rainDrop}
             style={{
               left: `${getRandomNumber(-20, 100)}vw`,
