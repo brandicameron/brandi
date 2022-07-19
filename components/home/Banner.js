@@ -1,5 +1,6 @@
 import styles from '../../styles/home/Banner.module.css';
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { useWeather } from '../../hooks/useWeather';
 import { useAstronomy } from '../../hooks/useAstronomy';
@@ -53,7 +54,7 @@ export default function Banner({ weatherData, astroData }) {
           </span>
         </h1>
         <div className={styles.brandi}>
-          <img src='/images/home/brandi.png' alt='' width={242} height={371} />
+          <Image src='/images/home/brandi.png' alt='' width={242} height={371} />
           {isScrolling && (
             <img
               className={styles.surprise}

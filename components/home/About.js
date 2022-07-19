@@ -88,7 +88,7 @@ const linkButtons = [
   },
   {
     title: 'Resumé',
-    href: 'www.brandicameron.com',
+    href: '/brandi-cameron-resume.pdf',
     ariaLabel: "View PDF of Brandi's resumé, opens in a new window.",
     src: '/images/icons/resume-icon.svg',
   },

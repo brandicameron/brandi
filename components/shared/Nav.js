@@ -41,6 +41,7 @@ export default function Nav() {
                   alt='Go back home.'
                   height='40'
                   width='40'
+                  title='Home'
                 />
               </a>
             </Link>
@@ -59,6 +60,11 @@ export default function Nav() {
               </Link>
             </li>
           ))}
+          <li>
+            <a href='/brandi-cameron-resume.pdf' target='_blank' title='Resumé'>
+              Resumé
+            </a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -80,10 +86,6 @@ const nav = [
   },
   {
     name: 'Contact',
-    href: '/#contact',
-  },
-  {
-    name: 'Resumé',
     href: '/#contact',
   },
 ];

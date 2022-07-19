@@ -7,7 +7,7 @@ export default function ProjectCard({ project }) {
   return (
     <article className={styles.projectCard}>
       <a href={project.buttons[0].href} target='_blank' rel='noreferrer' className={styles.cardImg}>
-        <Image src={project.src} alt={project.alt} width={1185} height={800} />
+        <Image src={project.src} alt={project.alt} width={345} height={233} />
       </a>
       <div className={styles.projectContent}>
         <h3>{project.title}</h3>
