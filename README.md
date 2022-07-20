@@ -10,9 +10,10 @@ VIEW LIVE: [https://brandicameron.com](https://brandicameron.com)
 ## Always something new to learn:
 
 - First time requiring multiple api fetches, therefore first time using Promise.all.
+- Learned about using aria-live='polite' to prompt screen readers to announce different aria-labels when a toggle button is clicked. (used in about section)
 - It was fun figuring out how to code the css rain/snow, randomizing the drops placement and animation delays using a random number function in inline css.
 - First time creating a dark mode theme — created using css variables. (dark mode kicks in after dusk in Nashville on the index/weather banner section to indicate nighttime.)
-- Dug into Framer Motion a bit more, still a lot to learn.
+- Dug into Framer Motion a bit more, still a lot to learn there.
 
 ---
 

@@ -17,15 +17,23 @@ export default function About() {
       </div>
       <div className={styles.content}>
         <h2>Hi, I&apos;m Brandi.</h2>
-        <div
-          onClick={handleToggled}
-          className={toggled ? `${styles.toggle} ${styles.clicked}` : `${styles.toggle}`}
-        >
+        <div className={styles.toggle}>
+          <span aria-hidden className={styles.toggleLabel}>
+            Concise
+          </span>
           <button
-            // onClick={handleToggled}
             className={toggled ? `${styles.toggleBtn} ${styles.clicked}` : `${styles.toggleBtn}`}
-            aria-label='Click to toggle between a concise or verbose description of Brandi.'
+            onClick={handleToggled}
+            aria-live='polite'
+            aria-label={
+              toggled
+                ? 'Verbose selected, click to toggle back to concise.'
+                : 'Click to toggle between a concise or verbose description of Brandi, concise is currently selected.'
+            }
           ></button>
+          <span aria-hidden className={styles.toggleLabel}>
+            Verbose
+          </span>
         </div>
         <p>
           I&apos;m a highly driven, front-end focused developer that thrives in creative

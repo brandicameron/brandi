@@ -27,54 +27,47 @@
 }
 
 .toggle {
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 55px;
-  height: 26px;
-  background-color: #ffd000;
-  font-weight: var(--bold);
+}
+
+.toggleLabel {
   font-size: 1.2rem;
-  border: 6px solid var(--black);
-  border-radius: 11px;
-  margin: 1.5rem 0;
-  cursor: pointer;
-}
-
-.toggle::before {
-  content: 'Concise';
-  position: relative;
-  left: -40px;
-  cursor: default;
-}
-
-.toggle::after {
-  content: 'Verbose';
-  position: relative;
-  right: -40px;
-  cursor: default;
+  font-weight: var(--bold);
 }
 
 .toggleBtn {
+  position: relative;
+  width: 55px;
+  height: 26px;
+  background-color: #ffd000;
+  border: 6px solid var(--black);
+  border-radius: 11px;
+  cursor: pointer;
+  margin: 1.5rem 1rem;
+}
+
+/* used padding for circle instead of fixed size with aspect ratio due to no support in Safari <15  */
+.toggleBtn::after {
+  content: '';
   position: absolute;
-  /* used padding instead of fixed size with aspect ratio due to no support in Safari <15  */
   padding: 12px;
   top: -11px;
   background-color: var(--white);
   border: 6px solid var(--black);
   border-radius: 50%;
-  transform: translateX(-12px);
+  transform: translateX(-30px);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.45);
   transition: transform 150ms linear;
 }
 
-.toggle.clicked {
+.toggleBtn.clicked {
   background-color: lawngreen;
 }
 
-.toggleBtn.clicked {
-  transform: translateX(12px);
+.toggleBtn.clicked::after {
+  transform: translateX(0);
 }
 
 .content p {
@@ -122,30 +115,9 @@
     margin: 0 auto;
   }
 
-  .toggle {
-    width: 70px;
-    height: 35px;
-    font-size: 1.3rem;
-    border-radius: 13px;
-    margin: 1.5rem 0;
-  }
-
-  .toggle::before {
-    left: -50px;
-  }
-
-  .toggle::after {
-    right: -50px;
-  }
-
   .toggleBtn {
-    top: -12px;
-    padding: 15px;
-    transform: translateX(-20px);
-  }
-
-  .toggleBtn.clicked {
-    transform: translateX(20px);
+    transform: scale(1.2);
+    margin: 1.5rem 1.25rem;
   }
 
   .buttons > :last-child {
