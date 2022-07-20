@@ -46,7 +46,7 @@ export default function Nav() {
               </a>
             </Link>
           </li>
-          {nav.map((link) => (
+          {navigationItems.map((link) => (
             <li key={link.name} onClick={handleCloseMenu}>
               <Link href={link.href}>
                 <a
@@ -71,7 +71,7 @@ export default function Nav() {
   );
 }
 
-const nav = [
+const navigationItems = [
   {
     name: 'Work',
     href: '/#projects',

@@ -72,7 +72,7 @@ export default function Banner({ weatherData, astroData }) {
 
 const iDot = {
   initial: {
-    y: '-70vh',
+    y: '-100vh',
   },
   animate: {
     y: 0,

@@ -42,7 +42,7 @@ const footerLinks = [
     title: 'Email',
   },
   {
-    href: '/',
+    href: '/brandi-cameron-resume.pdf',
     src: './images/icons/resume-icon.svg',
     title: 'Resumé',
   },

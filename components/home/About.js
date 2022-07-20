@@ -17,9 +17,12 @@ export default function About() {
       </div>
       <div className={styles.content}>
         <h2>Hi, I&apos;m Brandi.</h2>
-        <div className={toggled ? `${styles.toggle} ${styles.clicked}` : `${styles.toggle}`}>
+        <div
+          onClick={handleToggled}
+          className={toggled ? `${styles.toggle} ${styles.clicked}` : `${styles.toggle}`}
+        >
           <button
-            onClick={handleToggled}
+            // onClick={handleToggled}
             className={toggled ? `${styles.toggleBtn} ${styles.clicked}` : `${styles.toggleBtn}`}
             aria-label='Click to toggle between a concise or verbose description of Brandi.'
           ></button>

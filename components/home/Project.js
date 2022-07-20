@@ -76,20 +76,20 @@ export default function Project({ project }) {
 
 const iphone = {
   initial: {
-    x: '8px',
+    x: '15px',
   },
   animate: {
     x: 0,
     transition: {
       ease: 'linear',
-      duration: 2,
+      duration: 1.75,
     },
   },
 };
 
 const ipad = {
   initial: {
-    y: '8px',
+    y: '15px',
   },
   animate: {
     y: 0,

@@ -39,18 +39,21 @@
   border: 6px solid var(--black);
   border-radius: 11px;
   margin: 1.5rem 0;
+  cursor: pointer;
 }
 
 .toggle::before {
   content: 'Concise';
   position: relative;
   left: -40px;
+  cursor: default;
 }
 
 .toggle::after {
   content: 'Verbose';
   position: relative;
   right: -40px;
+  cursor: default;
 }
 
 .toggleBtn {

@@ -35,7 +35,7 @@ export default function Quote() {
 const rush = {
   initial: {
     skewX: 75,
-    x: '-50vw',
+    x: '-75vw',
   },
   animate: {
     skewX: 0,

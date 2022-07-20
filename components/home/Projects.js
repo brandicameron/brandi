@@ -136,7 +136,7 @@ const projects = [
     ipadAlt: 'An ipad displaying blood pressure readings and heart rate readings.',
     iphoneAlt: 'An iphone displaying blood pressure readings and heart rate readings.',
     description: [
-      'My second react project was a bit more sensible and I really got to see where components shine.',
+      'My second React project was a bit more sensible and I really got to see where components shine.',
       'You can instantly sign in as a guest, so give it a try!',
     ],
     buttons: [
