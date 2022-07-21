@@ -18,9 +18,9 @@ export default function Playground() {
         />
       </Head>
       <section className={styles.playgroundContainer}>
-        <motion.h1 aria-label='Welcome to the playground.'>
+        <h1 aria-label='Welcome to the playground.'>
           <img src='./images/playground/playground.svg' alt='' width={900} height={345} />
-        </motion.h1>
+        </h1>
         <h2>
           Fun little projects created from scratch on this learning journey. Are they important?
           Nope. Is the code gorgeous? Probably not. But I hope you enjoy them.

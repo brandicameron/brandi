@@ -10,6 +10,8 @@ export default function Layout({ children }) {
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <meta name='author' content='Brandi Cameron | hello@brandicameron.com' />
         <link rel='icon' href='/images/favicon.png' />
+        <meta property='og:title' content='Brandi Cameron | Front-end Developer in Nashville' />
+        <meta property='og:image' content='/images/share.jpg' />
       </Head>
 
       <Nav />
