@@ -1,4 +1,4 @@
-import styles from '../styles/CodeBlock.module.css';
+import styles from '../styles/copy/CodeBlock.module.css';
 import { useState } from 'react';
 
 export default function CodeBlock({ block }) {
@@ -13,12 +13,12 @@ export default function CodeBlock({ block }) {
     }
     setTimeout(() => {
       setCopied(false);
-    }, 1500);
+    }, 1000);
   };
 
   return (
     <article className={styles.card}>
-      <p>{block.title}</p>
+      <h2>{block.title}</h2>
       <pre style={{ whiteSpace: 'pre-line' }}>{block.code}</pre>
       <button
         onClick={() => copyToClipboard(block.code)}

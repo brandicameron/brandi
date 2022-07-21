@@ -1,0 +1,39 @@
+.card {
+  position: relative;
+  border: 1px solid #dedede;
+  border-radius: var(--borderRadius);
+  padding: 1rem;
+  box-shadow: 3px 3px 10px -5px rgb(34 34 34 / 30%);
+}
+
+.card h2 {
+  margin-bottom: 1.5rem;
+  padding: 0 0 0.5rem 0;
+  border-bottom: 1px solid #dedede;
+}
+
+.columns {
+  columns: 2;
+  column-gap: 4rem;
+  column-rule: 1px solid #dedede;
+}
+
+.card ul li {
+  margin: 0 0 1rem 0;
+  line-height: 1.3;
+}
+
+.card ul li a {
+  padding-bottom: 3px;
+  text-decoration: none;
+  background-image: linear-gradient(var(--primary), var(--primary));
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 6px;
+  transition: background-size 0.1s ease;
+}
+
+.card ul li a:hover,
+.card ul li a:focus {
+  background-size: 100% 6px;
+}

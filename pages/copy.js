@@ -1,9 +1,9 @@
-import styles from '../styles/Copy.module.css';
+import styles from '../styles/copy/Copy.module.css';
 import Head from 'next/head';
 import { v4 as uuidv4 } from 'uuid';
 import CodeBlock from '../components/CodeBlock';
 
-export default function copy() {
+export default function Copy() {
   return (
     <>
       <Head>
@@ -110,5 +110,16 @@ const copyCode = [
       defaultLocale: 'en',
       },
       };`,
+  },
+  {
+    title: 'Self Host Font',
+    code: `@font-face {
+      font-family: {Create a Font Name};
+      src: url(../font/{Font File});
+    }`,
+  },
+  {
+    title: 'Add class when map()',
+    code: `className={styles[link.class]}`,
   },
 ];
