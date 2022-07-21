@@ -114,6 +114,10 @@
   transform: scale(0.98);
 }
 
+.resumeLink {
+  color: var(--themeTextColor);
+}
+
 .navigation.open {
   position: absolute;
   flex-direction: column;

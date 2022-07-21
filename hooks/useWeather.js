@@ -9,6 +9,7 @@ export function useWeather(weatherData) {
     if (weatherData.current) {
       setWeatherCode(weatherData.current.condition.code);
       // TESTING CODES
+      // setWeatherCode(1000);
       // setWeatherCode(1006);
       // setWeatherCode(1009);
       // setWeatherCode(1243);

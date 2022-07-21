@@ -61,7 +61,12 @@ export default function Nav() {
             </li>
           ))}
           <li>
-            <a href='/brandi-cameron-resume.pdf' target='_blank' title='Resumé'>
+            <a
+              className={styles.resumeLink}
+              href='/brandi-cameron-resume.pdf'
+              target='_blank'
+              title='Resumé'
+            >
               Resumé
             </a>
           </li>

@@ -33,7 +33,6 @@ export function useAstronomy(astroData) {
 
   useEffect(() => {
     if (currentTime > sunrise && currentTime < sunset) {
-      setIsDay(false); //***** delete when done testing
       setIsDay(true);
     } else {
       setIsDay(false);
