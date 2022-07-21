@@ -14,27 +14,8 @@
   padding: 3rem;
 }
 
-.card {
-  position: relative;
-  border: 1px solid #dedede;
-  border-radius: var(--borderRadius);
-  padding: 0 1rem 0.75rem 1rem;
-  box-shadow: 3px 3px 10px -5px rgb(34 34 34 / 30%);
-}
-
-.card p {
-  text-align: center;
-  border-bottom: 1px solid #dedede;
-  padding-bottom: 0.75rem;
-}
-
-.card button {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  background-color: var(--primary);
-  width: 40px;
-  height: 40px;
-  padding: 0.5rem;
-  border-radius: var(--borderRadius) 0 0 0;
+@media screen and (max-width: 600px) {
+  .container {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
 }
