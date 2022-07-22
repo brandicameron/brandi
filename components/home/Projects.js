@@ -103,7 +103,7 @@ const projects = [
   {
     title: 'Clean & Green',
     contribution: 'Design | Development',
-    technologies: ['HTML 5', 'Sass', 'GSAP'],
+    technologies: ['HTML', 'Sass', 'GSAP'],
     ipad: '/images/projects/cleangreen-ipad.png',
     iphone: '/images/projects/cleangreen-iphone.png',
     ipadAlt: 'An ipad displaying the home page of the Clean and Green website.',
@@ -157,7 +157,7 @@ const projects = [
   {
     title: 'Cameron Home Inspection',
     contribution: 'Design | Development',
-    technologies: ['HTML 5', 'Sass', 'Javascript'],
+    technologies: ['HTML', 'Sass', 'Javascript'],
     ipad: '/images/projects/chi-ipad.png',
     iphone: '/images/projects/chi-iphone.png',
     ipadAlt: 'An ipad displaying the home page of the Cameron Home Inspection website.',
@@ -185,7 +185,7 @@ const projects = [
   {
     title: 'Etch-a-Sketch Drawing',
     contribution: 'Design | Development',
-    technologies: ['HTML 5', 'CSS 3', 'Javascript', 'GSAP'],
+    technologies: ['HTML', 'CSS', 'Javascript', 'GSAP'],
     ipad: '/images/projects/etchasketch-ipad.png',
     iphone: '/images/projects/etchasketch-iphone.png',
     ipadAlt: 'An ipad displaying an Etch-a-Sketch drawing website with an Apple pencil.',

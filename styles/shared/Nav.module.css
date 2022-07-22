@@ -172,3 +172,13 @@
     display: flex;
   }
 }
+
+@media screen and (max-width: 350px) {
+  .navigation.open {
+    font-size: var(--med);
+  }
+
+  .navigation.open li {
+    padding: 0.6rem 0;
+  }
+}
