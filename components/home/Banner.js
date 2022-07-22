@@ -56,13 +56,9 @@ export default function Banner({ weatherData, astroData }) {
         <div className={styles.brandi}>
           <Image src='/images/home/brandi.png' alt='' width={242} height={371} />
           {isScrolling && (
-            <img
-              className={styles.surprise}
-              src='/images/home/surprise.png'
-              alt=''
-              width={27}
-              height={33}
-            />
+            <div className={styles.surprise}>
+              <Image src='/images/home/surprise.png' alt='' width={27} height={33} />
+            </div>
           )}
         </div>
       </div>

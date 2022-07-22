@@ -142,6 +142,10 @@ const resources = [
         title: 'Create/Deploy Elevety Site',
         href: 'https://www.digitalocean.com/community/tutorials/how-to-create-and-deploy-your-first-eleventy-website',
       },
+      {
+        title: 'Host React Project on Github',
+        href: 'https://github.com/gitname/react-gh-pages',
+      },
     ],
   },
   {
@@ -224,6 +228,14 @@ const resources = [
   {
     title: 'Packages / Hooks',
     links: [
+      {
+        title: 'UUID',
+        href: 'https://www.npmjs.com/package/uuid',
+      },
+      {
+        title: 'React Icons',
+        href: 'https://react-icons.github.io/react-icons/',
+      },
       {
         title: 'Browser Image Compression',
         href: 'https://www.npmjs.com/package/browser-image-compression',
@@ -484,10 +496,6 @@ const resources = [
       {
         title: 'FE Interview Handbook',
         href: 'https://www.frontendinterviewhandbook.com/introduction',
-      },
-      {
-        title: 'Joe Coleman 🔥',
-        href: 'https://getcoleman.com/',
       },
     ],
   },
