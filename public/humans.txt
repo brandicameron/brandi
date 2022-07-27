@@ -1,0 +1,11 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+ Developer: Brandi Cameron
+ Contact: hello@brandicameron.com
+
+# TECHNOLOGY COLOPHON
+
+     NEXT.JS, CSS MODULES, FRAMER MOTION, WEATHER API

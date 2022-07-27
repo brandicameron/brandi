@@ -88,6 +88,10 @@ const resources = [
         title: 'Clever CSS Tips',
         href: 'https://threadreaderapp.com/thread/1546657470604382208.html',
       },
+      {
+        title: 'Cool Border Animations',
+        href: 'https://dev.to/chokcoco/fantastic-css-border-animation-5166',
+      },
     ],
   },
   {
