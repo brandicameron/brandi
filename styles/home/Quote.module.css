@@ -46,9 +46,9 @@
 }
 
 /* Landscape Mobile */
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+@media only screen and (min-width: 375px) and (max-width: 812px) and (orientation: landscape) {
   .container {
-    margin-top: 2rem;
+    margin-top: 7rem;
     padding: 8rem 5vw;
     clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
   }

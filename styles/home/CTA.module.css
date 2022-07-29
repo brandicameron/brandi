@@ -47,3 +47,14 @@
     height: 210px;
   }
 }
+
+/* Landscape Mobile */
+@media only screen and (min-width: 375px) and (max-width: 812px) and (orientation: landscape) {
+  .ctaContainer h2 {
+    margin: 7rem auto 7rem auto;
+  }
+
+  .heyText {
+    height: 175px;
+  }
+}

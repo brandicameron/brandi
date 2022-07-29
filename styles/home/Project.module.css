@@ -139,15 +139,11 @@
 }
 
 /* Landscape Mobile */
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+@media only screen and (min-width: 375px) and (max-width: 812px) and (orientation: landscape) {
   .card,
   .card:nth-child(even) {
     flex-direction: column;
     gap: 1rem;
-  }
-
-  .projectImages {
-    max-width: 60vw;
   }
 
   .content {
