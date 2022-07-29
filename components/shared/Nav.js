@@ -26,9 +26,9 @@ export default function Nav() {
           onClick={handleOpenCloseMenu}
           aria-label='Click to open navigation menu.'
         >
-          <div className={`${styles.line} ${styles.line1}`}></div>
-          <div className={`${styles.line} ${styles.line2}`}></div>
-          <div className={`${styles.line} ${styles.line3}`}></div>
+          <span className={`${styles.line} ${styles.line1}`}></span>
+          <span className={`${styles.line} ${styles.line2}`}></span>
+          <span className={`${styles.line} ${styles.line3}`}></span>
         </button>
 
         <ul className={menuOpen ? `${styles.navigation} ${styles.open}` : `${styles.navigation}`}>

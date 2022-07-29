@@ -30,14 +30,19 @@
 .hamburgerBtn {
   position: absolute;
   top: 25px;
-  right: 5px;
+  right: 25px;
   display: none;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: 30px;
+  height: 32px;
+  width: 35px;
   background-color: transparent;
   z-index: 100;
+}
+
+.header.open .hamburgerBtn {
+  justify-content: center;
 }
 
 .line {
@@ -50,7 +55,8 @@
 }
 
 .header.open .line1 {
-  transform: rotate(45deg) translateY(8px) translateX(7px);
+  position: absolute;
+  transform: rotate(45deg);
   transform-origin: center;
 }
 
@@ -59,7 +65,8 @@
 }
 
 .header.open .line3 {
-  transform: rotate(-45deg) translateY(-11px) translateX(9px);
+  position: absolute;
+  transform: rotate(-45deg);
   transform-origin: center;
 }
 
