@@ -105,6 +105,15 @@ li {
   padding: 0;
 }
 
+input {
+  font-family: inherit;
+  font-size: inherit;
+  border: none;
+  border-radius: var(--borderRadius);
+  padding: 0.25rem 0.25rem 0.25rem 0.5rem;
+  color: var(--black);
+}
+
 /* Utilities */
 
 *:focus-visible {

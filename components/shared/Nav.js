@@ -26,9 +26,27 @@ export default function Nav() {
           onClick={handleOpenCloseMenu}
           aria-label='Click to open navigation menu.'
         >
-          <span className={`${styles.line} ${styles.line1}`}></span>
-          <span className={`${styles.line} ${styles.line2}`}></span>
-          <span className={`${styles.line} ${styles.line3}`}></span>
+          <span
+            className={`${styles.line} ${styles.line1}`}
+            style={{
+              backgroundColor:
+                router.asPath === '/playground' ? 'var(--black)' : 'var(--themeTextColor)',
+            }}
+          ></span>
+          <span
+            className={`${styles.line} ${styles.line2}`}
+            style={{
+              backgroundColor:
+                router.asPath === '/playground' ? 'var(--black)' : 'var(--themeTextColor)',
+            }}
+          ></span>
+          <span
+            className={`${styles.line} ${styles.line3}`}
+            style={{
+              backgroundColor:
+                router.asPath === '/playground' ? 'var(--black)' : 'var(--themeTextColor)',
+            }}
+          ></span>
         </button>
 
         <ul className={menuOpen ? `${styles.navigation} ${styles.open}` : `${styles.navigation}`}>

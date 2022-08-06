@@ -5,14 +5,12 @@ import { motion } from 'framer-motion';
 import { useWeather } from '../../hooks/useWeather';
 import { useAstronomy } from '../../hooks/useAstronomy';
 import { useWeatherText } from '../../hooks/useWeatherText';
-import { useIsScrolling } from '../../hooks/useIsScrolling';
 import Weather from '../weather/Weather';
 
 export default function Banner({ weatherData, astroData }) {
   const { weather } = useWeather(weatherData);
   const { isDay } = useAstronomy(astroData);
   const { condition } = useWeatherText(weather, isDay);
-  const { isScrolling } = useIsScrolling();
   const [temp, setTemp] = useState(60);
 
   useEffect(() => {
@@ -55,11 +53,6 @@ export default function Banner({ weatherData, astroData }) {
         </h1>
         <div className={styles.brandi}>
           <Image src='/images/home/brandi.png' alt='' width={242} height={371} />
-          {isScrolling && (
-            <div className={styles.surprise}>
-              <Image src='/images/home/surprise.png' alt='' width={27} height={33} />
-            </div>
-          )}
         </div>
       </div>
     </section>
