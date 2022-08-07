@@ -6,10 +6,12 @@ import { collection, getDocs, query, onSnapshot, orderBy } from 'firebase/firest
 import ResourceCard from '../components/resources/ResourceCard';
 import AddCategoryForm from '../components/resources/AddCategoryForm';
 import { v4 as uuidv4 } from 'uuid';
+import { useUser } from '../hooks/useUser';
 
 export default function Resources({ resources }) {
   const [data, setData] = useState('');
   const [openForm, setOpenForm] = useState(false);
+  const { loggedIn } = useUser();
 
   useEffect(() => {
     if (resources) {
@@ -45,17 +47,19 @@ export default function Resources({ resources }) {
       <h1 className={styles.heading}>Resources</h1>
       <section className={styles.container}>
         {data && data.map((section) => <ResourceCard key={uuidv4()} section={section} />)}
-        <div className={styles.addCategory}>
-          <button
-            title='Add New Category'
-            className={styles.addCategoryBtn}
-            aria-label='Add a new category.'
-            onClick={handleOpenForm}
-          >
-            +
-          </button>
-          {openForm && <AddCategoryForm openForm={openForm} setOpenForm={setOpenForm} />}
-        </div>
+        {loggedIn && (
+          <div className={styles.addCategory}>
+            <button
+              title='Add New Category'
+              className={styles.addCategoryBtn}
+              aria-label='Add a new category.'
+              onClick={handleOpenForm}
+            >
+              +
+            </button>
+            {openForm && <AddCategoryForm openForm={openForm} setOpenForm={setOpenForm} />}
+          </div>
+        )}
       </section>
     </>
   );

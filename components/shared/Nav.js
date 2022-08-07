@@ -2,10 +2,14 @@ import styles from '../../styles/shared/Nav.module.css';
 import { useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+import { useUser } from '../../hooks/useUser';
+import { useLogout } from '../../hooks/useLogout';
 
 export default function Nav() {
   const [menuOpen, setMenuOpen] = useState(false);
   const router = useRouter();
+  const { loggedIn } = useUser();
+  const { logoutUser } = useLogout();
 
   const handleOpenCloseMenu = () => {
     setMenuOpen((prev) => !prev);
@@ -13,6 +17,10 @@ export default function Nav() {
 
   const handleCloseMenu = () => {
     setMenuOpen(false);
+  };
+
+  const handleLogOut = () => {
+    logoutUser();
   };
 
   return (
@@ -78,7 +86,7 @@ export default function Nav() {
               </Link>
             </li>
           ))}
-          <li>
+          <li onClick={handleCloseMenu}>
             <a
               className={styles.resumeLink}
               href='/brandi-cameron-resume.pdf'
@@ -88,6 +96,20 @@ export default function Nav() {
               Resumé
             </a>
           </li>
+          {router.asPath === '/resources' && !loggedIn && (
+            <li onClick={handleCloseMenu}>
+              <Link href='/login'>
+                <a>Login</a>
+              </Link>
+            </li>
+          )}
+          {router.asPath === '/resources' && loggedIn && (
+            <li onClick={handleCloseMenu}>
+              <button className={styles.logOutButton} onClick={handleLogOut}>
+                Logout
+              </button>
+            </li>
+          )}
         </ul>
       </nav>
     </header>

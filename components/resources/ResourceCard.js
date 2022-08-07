@@ -1,15 +1,17 @@
 import styles from '../../styles/resouces/ResourceCard.module.css';
 import { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
-import AddLinkForm from './AddLinkForm';
 import { useDeleteLink } from '../../hooks/useDeleteLink';
 import { useDeleteCategory } from '../../hooks/useDeleteCategory';
+import { useUser } from '../../hooks/useUser';
+import AddLinkForm from './AddLinkForm';
 
 export default function ResourceCard({ section }) {
   const [openForm, setOpenForm] = useState(false);
   const [showDelete, setShowDelete] = useState(false);
   const { deleteLink } = useDeleteLink();
   const { deleteCategory } = useDeleteCategory();
+  const { loggedIn } = useUser();
 
   const handleOpenForm = () => {
     setOpenForm(true);
@@ -44,12 +46,14 @@ export default function ResourceCard({ section }) {
           )}
           {section.category}
         </h2>
-        <button
-          className={styles.editButton}
-          aria-label='Edit'
-          title='Edit'
-          onClick={handleShowDelete}
-        ></button>
+        {loggedIn && (
+          <button
+            className={styles.editButton}
+            aria-label='Edit'
+            title='Edit'
+            onClick={handleShowDelete}
+          ></button>
+        )}
       </header>
       <ul className={section.links && section.links.length > 6 ? `${styles.columns}` : ''}>
         {section.links &&
@@ -71,14 +75,16 @@ export default function ResourceCard({ section }) {
             </li>
           ))}
       </ul>
-      <button
-        title='Add New Link'
-        onClick={handleOpenForm}
-        className={styles.addButton}
-        aria-label='Add a new link.'
-      >
-        +
-      </button>
+      {loggedIn && (
+        <button
+          title='Add New Link'
+          onClick={handleOpenForm}
+          className={styles.addButton}
+          aria-label='Add a new link.'
+        >
+          +
+        </button>
+      )}
       {openForm && <AddLinkForm openForm={openForm} setOpenForm={setOpenForm} section={section} />}
     </article>
   );
