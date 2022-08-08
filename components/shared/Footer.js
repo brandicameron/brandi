@@ -33,6 +33,7 @@ export default function Footer() {
           className={styles.inlineLink}
           href='https://github.com/brandicameron/brandi'
           target='_blank'
+          rel='noreferrer'
         >
           View the Github Repo for this Site
         </a>
