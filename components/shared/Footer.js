@@ -29,6 +29,13 @@ export default function Footer() {
             ))}
           </ul>
         </nav>
+        <a
+          className={styles.inlineLink}
+          href='https://github.com/brandicameron/brandi'
+          target='_blank'
+        >
+          View the Github Repo for this Site
+        </a>
         <small>© {currentYear} Brandi Cameron</small>
       </section>
     </>

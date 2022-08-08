@@ -31,7 +31,7 @@
 .cloudRound {
   position: relative;
   opacity: 0.97;
-  filter: drop-shadow(10px 15px 30px rgba(34 34 34 / 25%));
+  filter: drop-shadow(10px 10px 10px rgba(34 34 34 / 8%));
 }
 
 .cloudFlat {

@@ -7,7 +7,7 @@
   background-image: url('/images/weather/partly-cloudy.png');
   background-repeat: repeat-x;
   background-position-x: -50px;
-  filter: drop-shadow(10px 15px 30px rgba(34 34 34 / 25%));
+  filter: drop-shadow(10px 10px 10px rgba(34 34 34 / 8%));
   z-index: 2;
   /* z-index prevents shadow being cut off in safari */
 }
@@ -16,7 +16,7 @@
   position: absolute;
   top: 2.75vh;
   left: 5vw;
-  filter: drop-shadow(10px 15px 30px rgba(34 34 34 / 25%));
+  filter: drop-shadow(10px 10px 10px rgba(34 34 34 / 8%));
   animation: float 200s linear infinite;
   z-index: 3;
   /* z-index prevents shadow being cut off in safari */

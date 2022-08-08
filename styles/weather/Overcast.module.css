@@ -4,7 +4,7 @@
   left: 0;
   width: 100%;
   height: 500px;
-  filter: drop-shadow(10px 15px 30px rgba(34 34 34 / 25%)) brightness(0.85);
+  filter: drop-shadow(10px 10px 10px rgba(34 34 34 / 8%)) brightness(0.85);
   overflow-x: hidden;
 }
 
@@ -31,7 +31,7 @@
   position: absolute;
   top: -20px;
   left: 5vw;
-  filter: drop-shadow(10px 15px 30px rgba(34 34 34 / 15%)) brightness(0.9);
+  filter: drop-shadow(10px 10px 10px rgba(34 34 34 / 8%)) brightness(0.95);
   animation: float 450s linear infinite;
 }
 

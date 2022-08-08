@@ -11,7 +11,7 @@
   position: relative;
   margin-top: -50px;
   z-index: 50;
-  filter: drop-shadow(18px 15px 20px rgb(179, 179, 179));
+  filter: drop-shadow(12px 10px 15px rgb(218, 218, 218));
 }
 
 .iphone {
