@@ -4,6 +4,7 @@
   flex-direction: column;
   margin: 0 auto;
   padding-bottom: 10rem;
+  overflow-x: hidden;
 }
 
 .projects {
