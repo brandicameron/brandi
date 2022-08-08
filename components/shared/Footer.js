@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <>
       <StripeBorder />
-      <section className={styles.footer}>
+      <footer className={styles.footer}>
         <nav>
           <ul>
             <li>
@@ -38,7 +38,7 @@ export default function Footer() {
           View the Github Repo for this Site
         </a>
         <small>© {currentYear} Brandi Cameron</small>
-      </section>
+      </footer>
     </>
   );
 }

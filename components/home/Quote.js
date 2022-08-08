@@ -3,8 +3,8 @@ import { motion } from 'framer-motion';
 
 export default function Quote() {
   return (
-    <section className={`${styles.container} flex flex-center`}>
-      <blockquote className={styles.quote}>
+    <aside className={`${styles.container}`}>
+      <p className={styles.quote}>
         The dopamine
         <motion.img
           variants={rush}
@@ -27,8 +27,8 @@ export default function Quote() {
           width='640'
           height='170'
         />
-      </blockquote>
-    </section>
+      </p>
+    </aside>
   );
 }
 

@@ -24,7 +24,7 @@ export default function Banner({ weatherData, astroData }) {
       {/* condition prevents flash of fallback sunshine */}
       {condition && <Weather weather={weather} isDay={isDay} />}
       <div className={styles.bannerContent}>
-        <h1 aria-label='Brandi, front-end developer, designer and domain hoarder.'>
+        <h1 aria-label='Brandi, front-end developer and domain hoarder.'>
           <span className={styles.name} aria-hidden>
             <img
               className={styles.nameSvg}
