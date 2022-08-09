@@ -8,9 +8,9 @@ export const useLogin = () => {
   const loginUser = (email, password) => {
     signInWithEmailAndPassword(auth, email, password).catch((error) => {
       if (error.code === 'auth/user-not-found') {
-        setErrorMessage('This email address was not found.');
+        setErrorMessage('Invalid Username/password');
       } else if (error.code === 'auth/wrong-password') {
-        setErrorMessage('Password is incorrect.');
+        setErrorMessage('Invalid Username/password');
       }
       setTimeout(() => {
         setErrorMessage('');

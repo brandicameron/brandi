@@ -14,6 +14,8 @@ VIEW LIVE: [https://brandicameron.com](https://brandicameron.com)
 - It was fun figuring out how to code the css rain/snow, randomizing the drops placement and animation delays using a random number function in inline css.
 - First time creating a dark mode theme — created using css variables. (dark mode kicks in after dusk in Nashville on the index/weather banner section to indicate nighttime.)
 - Dug into Framer Motion a bit more, still a lot to learn there.
+- Learned how to add and delete items from an array in firestore database.
+- Thanks to a very helpful Reddit user, was alerted to a security hole with Firebase (ability for people to sign up for an account even if there is no sign up form in the UI by issuing an HTTP POST request to the Auth endpoint) - learned how to tighten up my database security rules to only allow a particular user to write data.
 
 ---
 
