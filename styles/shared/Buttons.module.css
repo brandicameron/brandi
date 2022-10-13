@@ -1,6 +1,5 @@
 .btn {
   position: relative;
-  background-color: var(--white);
   color: var(--textColor);
   font-weight: var(--bold);
   text-align: center;
