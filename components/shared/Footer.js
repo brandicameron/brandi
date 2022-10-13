@@ -7,7 +7,7 @@ export default function Footer() {
 
   return (
     <>
-      <StripeBorder />
+      {/* <StripeBorder /> */}
       <footer className={styles.footer}>
         <nav>
           <ul>
