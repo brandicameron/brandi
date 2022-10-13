@@ -1,20 +1,13 @@
 import style from '../../styles/home/Projects.module.css';
 import styles from '../../styles/shared/Buttons.module.css';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import Project from './Project';
 
 export default function Projects() {
   const [numProjectsShown, setNumProjectsShown] = useState(3);
-  const [clickSound, setClickSound] = useState(null);
-
-  useEffect(() => {
-    setClickSound(new Audio('./sounds/coin.wav'));
-  }, []);
 
   const handleViewMore = () => {
-    clickSound.volume = 0.01;
-    clickSound.play();
     if (numProjectsShown === 3) {
       setNumProjectsShown(projects.length);
     } else {
