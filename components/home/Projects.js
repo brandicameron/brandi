@@ -13,7 +13,7 @@ export default function Projects() {
   }, []);
 
   const handleViewMore = () => {
-    clickSound.volume = 0.1;
+    clickSound.volume = 0.01;
     clickSound.play();
     if (numProjectsShown === 3) {
       setNumProjectsShown(projects.length);
