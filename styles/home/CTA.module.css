@@ -1,5 +1,6 @@
 .ctaContainer {
   background-color: var(--background);
+  border-top: 6px solid var(--primary);
 }
 
 .ctaContainer h2 {

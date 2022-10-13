@@ -1,12 +1,10 @@
 import styles from '../../styles/home/CTA.module.css';
 import Link from 'next/link';
-import StripeBorder from '../shared/StripeBorder';
 import { motion } from 'framer-motion';
 
 export default function CTA() {
   return (
     <section className={styles.ctaContainer}>
-      <StripeBorder />
       <h2 aria-label='Hey, you should visit my code'>
         <span className={styles.heyText} aria-hidden></span>
         visit my code{' '}
