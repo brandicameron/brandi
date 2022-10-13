@@ -21,6 +21,12 @@ export default function Copy() {
 
 const copyCode = [
   {
+    title: 'Media Query',
+    code: `@media screen and (max-width: 600px) {
+
+    }`,
+  },
+  {
     title: 'Flex Center',
     code: `display: flex; 
     flex-direction: column; 
@@ -50,12 +56,6 @@ const copyCode = [
     code: `position: absolute;
     left: 50%;
     transform: translateX(-50%);`,
-  },
-  {
-    title: 'Media Query',
-    code: `@media screen and (max-width: 600px) {
-
-    }`,
   },
   {
     title: 'Box Shadow',
@@ -121,5 +121,37 @@ const copyCode = [
   {
     title: 'Add class when map()',
     code: `className={styles[link.class]}`,
+  },
+  {
+    title: 'Fetch Hook',
+    code: `import { useState, useEffect } from 'react';
+
+    export function useFetchData(url) {
+      const [data, setData] = useState([]);
+      const [loading, setLoading] = useState(false);
+    
+      const handleResponse = (response) => {
+        if (!response.ok) {
+          throw Error(response.statusText);
+        }
+        return response.json();
+      };
+    
+      useEffect(() => {
+        setLoading(true);
+        fetch(url)
+          .then(handleResponse)
+          .then((data) => {
+            setData(data.data.memes);
+            setLoading(false);
+          })
+          .catch((err) => {
+            console.log(err);
+          });
+      }, []);
+    
+      return { data, loading };
+    }
+    `,
   },
 ];
