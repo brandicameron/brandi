@@ -1,13 +1,11 @@
 import styles from '../../styles/shared/Footer.module.css';
 import Link from 'next/link';
-import StripeBorder from '../shared/StripeBorder';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
     <>
-      {/* <StripeBorder /> */}
       <footer className={styles.footer}>
         <nav>
           <ul>
