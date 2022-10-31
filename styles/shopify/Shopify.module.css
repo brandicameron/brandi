@@ -1,0 +1,60 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--primary);
+}
+
+.message {
+  background-color: var(--white);
+  border: 6px solid var(--black);
+  border-radius: var(--borderRadius);
+  text-align: center;
+  width: min(750px, 90vw);
+  padding: 5rem;
+  margin-top: -10vh;
+}
+
+.message h1 {
+  font-size: var(--lg);
+}
+
+.message a {
+  position: relative;
+  display: block;
+  margin: 2rem auto 0 auto;
+  color: var(--primary);
+  font-weight: var(--bold);
+  font-size: var(--med);
+  width: fit-content;
+}
+
+.message a::after {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  content: '';
+  height: 4px;
+  width: 100%;
+  transform: scaleX(0);
+  background-color: var(--primary);
+  border-radius: 1px;
+  transform-origin: left;
+  transition: transform 50ms linear;
+}
+
+.message a:hover::after {
+  transform: scaleX(1);
+}
+
+@media screen and (max-width: 600px) {
+  .message {
+    padding: 2rem 1rem;
+    margin-top: 0;
+  }
+
+  .message a {
+    font-size: 1.2rem;
+  }
+}
