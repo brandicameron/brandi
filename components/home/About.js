@@ -45,7 +45,7 @@ export default function About() {
         </p>
         <div style={{ display: toggled ? 'block' : 'none' }}>
           <p>
-            A former graphic designer, I spent 10 years building and maintaining a{' '}
+            A former graphic designer, I spent over 10 years building and maintaining a{' '}
             <a className={styles.inlineLink} href='https://3dollartemplates.com/' target='blank'>
               leading Photoshop template company
             </a>{' '}
