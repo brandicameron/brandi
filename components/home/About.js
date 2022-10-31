@@ -1,6 +1,7 @@
 import styles from '../../styles/home/About.module.css';
 import { useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import LinkBtn from '../shared/LinkBtn';
 
 export default function About() {
@@ -46,9 +47,12 @@ export default function About() {
         <div style={{ display: toggled ? 'block' : 'none' }}>
           <p>
             A former graphic designer, I spent over 10 years building and maintaining a{' '}
-            <a className={styles.inlineLink} href='https://3dollartemplates.com/' target='blank'>
+            {/* <a className={styles.inlineLink} href='https://3dollartemplates.com/' target='blank'>
               leading Photoshop template company
-            </a>{' '}
+            </a>{' '} */}
+            <Link href='/shopify'>
+              <a className={styles.inlineLink}>leading Photoshop template company</a>
+            </Link>{' '}
             for professional photographers. I conceptualized, designed and made market ready
             thousands of products including branding materials, social media graphics, greeting
             cards, albums and easy-to-use mock up templates. The e-commerce website was initially
