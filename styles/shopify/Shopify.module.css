@@ -3,6 +3,7 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
+  max-height: -webkit-fill-available;
   background-color: var(--primary);
 }
 
@@ -25,7 +26,6 @@
 .message small {
   display: block;
   margin-top: 1.5rem;
-  margin-bottom: -0.25rem;
   color: #545454;
 }
 
@@ -40,6 +40,14 @@
   padding: 0.5rem 1.5rem;
   border-radius: var(--borderRadius);
   margin-top: 0.25rem;
+  /* retains button size when clicked and checkmark image briefly appears */
+  min-width: 100px;
+  min-height: 40px;
+}
+
+.checkmark {
+  width: 25px;
+  margin: 0 auto;
 }
 
 .copied {

@@ -10,14 +10,21 @@ export default function Shopify() {
       <article className={styles.message}>
         <h1>I closed this Shopify business on November 1</h1>
         <p>but you can still view the store at the link below using this password:</p>
-        <small>Click to copy</small>
+        <small>Click to copy passcode.</small>
         <button
           type='button'
           aria-label='Click to copy passcode.'
           className={copied ? `${styles.passcode} ${styles.copied}` : `${styles.passcode}`}
           onClick={() => copyToClipboard(passcode)}
         >
-          {passcode}
+          {copied && (
+            <img
+              className={styles.checkmark}
+              src='../images/icons/check.svg'
+              alt='Copied to clipboard.'
+            />
+          )}
+          {!copied && <span>{passcode}</span>}
         </button>
         <small>View the store:</small>
         <a className={styles.storeLink} href='https://3dollartemplates.com/' target='blank'>
