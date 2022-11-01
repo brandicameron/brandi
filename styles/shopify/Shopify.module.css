@@ -11,41 +11,35 @@
   border: 6px solid var(--black);
   border-radius: var(--borderRadius);
   text-align: center;
-  width: min(750px, 90vw);
+  width: min(700px, 90vw);
   padding: 5rem;
   margin-top: -10vh;
 }
 
 .message h1 {
   font-size: var(--lg);
+  max-width: 450px;
+  margin: 0 auto -0.25rem auto;
 }
 
-.message a {
-  position: relative;
+.message small {
   display: block;
-  margin: 2rem auto 0 auto;
-  color: var(--primary);
-  font-weight: var(--bold);
-  font-size: var(--med);
-  width: fit-content;
+  margin-top: 1.5rem;
+  margin-bottom: -0.25rem;
+  color: #545454;
 }
 
-.message a::after {
-  position: absolute;
-  bottom: -1px;
-  left: 0;
-  content: '';
-  height: 4px;
-  width: 100%;
-  transform: scaleX(0);
+.passcode,
+.storeLink {
+  display: block;
   background-color: var(--primary);
-  border-radius: 1px;
-  transform-origin: left;
-  transition: transform 50ms linear;
-}
-
-.message a:hover::after {
-  transform: scaleX(1);
+  color: #fff;
+  font-weight: var(--bold);
+  width: fit-content;
+  margin: 0 auto;
+  padding: 0.5rem 1.5rem;
+  border-radius: var(--borderRadius);
+  margin-top: 0.25rem;
 }
 
 @media screen and (max-width: 600px) {
@@ -54,7 +48,7 @@
     margin-top: 0;
   }
 
-  .message a {
+  .storeLink {
     font-size: 1.2rem;
   }
 }

@@ -4,12 +4,17 @@ export default function Shopify() {
   return (
     <section className={styles.container}>
       <article className={styles.message}>
-        <h1>Store closed November 1, 2022</h1>
-        <p>
-          You can still view the shopify store using code <strong>XXXX</strong> at the link below:
-        </p>
-        <a href='https://3dollartemplates.com/' target='blank'>
-          https://3dollartemplates.com
+        <h1>
+          I closed this Shopify business on November 1<sup>st</sup>
+        </h1>
+        <p>but you can still view the store at the link below using this password:</p>
+        <small>Click to copy</small>
+        <button type='button' aria-label='Click to copy passcode.' className={styles.passcode}>
+          zrgpjf
+        </button>
+        <small>View the store:</small>
+        <a className={styles.storeLink} href='https://3dollartemplates.com/' target='blank'>
+          3dollartemplates.com
         </a>
       </article>
     </section>
