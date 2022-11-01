@@ -1,5 +1,6 @@
 import styles from '../../styles/shared/Nav.module.css';
 import { useState } from 'react';
+import { navigationLinks } from '../../data/navigationLinks';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useUser } from '../../hooks/useUser';
@@ -72,7 +73,7 @@ export default function Nav() {
               </a>
             </Link>
           </li>
-          {navigationItems.map((link) => (
+          {navigationLinks.map((link) => (
             <li key={link.name} onClick={handleCloseMenu}>
               <Link href={link.href}>
                 <a
@@ -115,22 +116,3 @@ export default function Nav() {
     </header>
   );
 }
-
-const navigationItems = [
-  {
-    name: 'Work',
-    href: '/#projects',
-  },
-  {
-    name: 'Playground',
-    href: '/playground',
-  },
-  {
-    name: 'About',
-    href: '/#about',
-  },
-  {
-    name: 'Contact',
-    href: '/#contact',
-  },
-];

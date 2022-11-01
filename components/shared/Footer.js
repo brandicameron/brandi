@@ -1,5 +1,6 @@
 import styles from '../../styles/shared/Footer.module.css';
 import Link from 'next/link';
+import { footerLinks } from '../../data/footerLinks';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -40,21 +41,3 @@ export default function Footer() {
     </>
   );
 }
-
-const footerLinks = [
-  {
-    href: 'mailto:hello@brandicameron.com?subject=Hi%20Brandi!',
-    src: './images/icons/email-icon.svg',
-    title: 'Email',
-  },
-  {
-    href: '/brandi-cameron-resume.pdf',
-    src: './images/icons/resume-icon.svg',
-    title: 'Resumé',
-  },
-  {
-    href: 'https://github.com/brandicameron',
-    src: '/images/icons/github-icon.svg',
-    title: 'Github',
-  },
-];
