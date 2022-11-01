@@ -1,7 +1,8 @@
-import styles from '../styles/copy/Copy.module.css';
+import styles from './../styles/copy/Copy.module.css';
 import Head from 'next/head';
+import CodeBlock from '../components/copy/CodeBlock';
+
 import { v4 as uuidv4 } from 'uuid';
-import CodeBlock from '../components/CodeBlock';
 
 export default function Copy() {
   return (

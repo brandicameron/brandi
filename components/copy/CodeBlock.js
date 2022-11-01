@@ -1,5 +1,5 @@
-import styles from '../styles/copy/CodeBlock.module.css';
-import { useCopytoClipboard } from '../hooks/useCopytoClipboard';
+import styles from '../../styles/copy/CodeBlock.module.css';
+import { useCopytoClipboard } from '../../hooks/useCopytoClipboard';
 
 export default function CodeBlock({ block }) {
   const { copied, copyToClipboard } = useCopytoClipboard();
