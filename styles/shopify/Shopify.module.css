@@ -42,6 +42,10 @@
   margin-top: 0.25rem;
 }
 
+.copied {
+  background-color: #0de486;
+}
+
 @media screen and (max-width: 600px) {
   .message {
     padding: 2rem 1rem;

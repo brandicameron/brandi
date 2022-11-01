@@ -1,20 +1,8 @@
 import styles from '../styles/copy/CodeBlock.module.css';
-import { useState } from 'react';
+import { useCopytoClipboard } from '../hooks/useCopytoClipboard';
 
 export default function CodeBlock({ block }) {
-  const [copied, setCopied] = useState(false);
-
-  const copyToClipboard = async (text) => {
-    setCopied(true);
-    try {
-      await navigator.clipboard.writeText(text);
-    } catch (e) {
-      console.log(e);
-    }
-    setTimeout(() => {
-      setCopied(false);
-    }, 1000);
-  };
+  const { copied, copyToClipboard } = useCopytoClipboard();
 
   return (
     <article className={styles.card}>
