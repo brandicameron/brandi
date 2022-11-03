@@ -6,6 +6,13 @@ export const copyCode = [
     }`,
   },
   {
+    title: 'Reduced Motion',
+    code: `@media (prefers-reduced-motion) {
+      
+    }
+    `,
+  },
+  {
     title: 'Flex Center',
     code: `display: flex; 
     flex-direction: column; 
@@ -37,6 +44,10 @@ export const copyCode = [
     transform: translateX(-50%);`,
   },
   {
+    title: 'Skip Link',
+    code: `<a className='skip-to-content-link' href='#skip-target'>Skip to content</a>`,
+  },
+  {
     title: 'Box Shadow',
     code: `box-shadow: 5px 5px 10px -5px rgba(0 0 0 / 50%);`,
   },
@@ -51,6 +62,10 @@ export const copyCode = [
   {
     title: 'Inset Shadow',
     code: `box-shadow: inset 2px 2px 5px rgba(0 0 0 / 25%);`,
+  },
+  {
+    title: 'Subtle Shadow',
+    code: `box-shadow: 2.5rem 3.75rem 3rem -3rem hsl(var(--clr-secondary-400) / 0.25);`,
   },
   {
     title: 'Background Gradient',
@@ -75,10 +90,33 @@ export const copyCode = [
   {
     title: 'Picture Element',
     code: `<picture>
-    <source media="(min-width: 715px)" srcset="" type="image/webp" />
-    <source media="(min-width: 715px)" srcset="" type="image/jpeg" />
-    <img src="mobile-img" alt="" />
+    <source media="(min-width: 715px)" srcset="xxxxxxx.jpg" type="image/webp" />
+    <source media="(min-width: 715px)" srcset="xxxxxxx.jpg" type="image/jpeg" />
+    <img src="mobile-img" alt="xxxxxxx" />
     </picture>`,
+  },
+  {
+    title: 'Srcset',
+    code: `<img
+    srcset="xxxxxxx.jpg 480w, xxxxxxx.jpg 800w"
+    sizes="(max-width: 600px) 480px, 800px"
+    src="xxxxxxx.jpg.jpg"
+    alt="xxxxxxx" />`,
+  },
+  {
+    title: 'Get unique values in array',
+    code: `const uniqueValues = [...new Set(array)];`,
+  },
+  {
+    title: 'Error Message CSS',
+    code: `.error {
+      color: red;
+      background: pink;
+      border: 1px solid red;
+      border-radius: 4px;
+      padding: 8px;
+      margin: 10px 0;
+    }`,
   },
   {
     title: 'Next.js Lang',
