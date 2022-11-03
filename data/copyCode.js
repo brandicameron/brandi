@@ -48,6 +48,13 @@ export const copyCode = [
     code: `<a className='skip-to-content-link' href='#skip-target'>Skip to content</a>`,
   },
   {
+    title: 'Safari bottom bar fix',
+    code: `.container {
+      height: 100vh;
+      max-height: -webkit-fill-available;
+    }`,
+  },
+  {
     title: 'Box Shadow',
     code: `box-shadow: 5px 5px 10px -5px rgba(0 0 0 / 50%);`,
   },
