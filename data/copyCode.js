@@ -72,7 +72,7 @@ export const copyCode = [
   },
   {
     title: 'Subtle Shadow',
-    code: `box-shadow: 2.5rem 3.75rem 3rem -3rem hsl(var(--clr-secondary-400) / 0.25);`,
+    code: `box-shadow: 2.5rem 3.75rem 3rem -3rem rgba(0 0 0 / 30%);`,
   },
   {
     title: 'Background Gradient',
