@@ -35,7 +35,7 @@
   align-items: stretch;
   gap: 2rem;
   max-width: 1200px;
-  margin: 4rem auto 8rem auto;
+  margin: 0.5rem auto 8rem auto;
 }
 
 .runner {

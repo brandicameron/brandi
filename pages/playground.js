@@ -1,9 +1,10 @@
 import styles from '../styles/playground/Playground.module.css';
 import Head from 'next/head';
 import { playgroundProjects } from '../data/playgroundProjects';
+import ProjectCard from '../components/playground/ProjectCard';
+import FeatureProject from '../components/playground/FeatureProject';
 import { v4 as uuidv4 } from 'uuid';
 import { motion, useTransform, useViewportScroll } from 'framer-motion';
-import ProjectCard from '../components/playground/ProjectCard';
 
 export default function Playground() {
   const { scrollY } = useViewportScroll();
@@ -26,6 +27,7 @@ export default function Playground() {
           Fun little projects created from scratch on this learning journey. Are they important?
           Nope. Is the code gorgeous? Probably not. But I hope you enjoy them.
         </h2>
+        <FeatureProject />
         <motion.ul
           variants={fadeUp}
           initial='initial'
