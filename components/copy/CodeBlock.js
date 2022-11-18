@@ -7,7 +7,10 @@ export default function CodeBlock({ block }) {
   return (
     <article className={styles.card}>
       <h2>{block.title}</h2>
-      <pre style={{ whiteSpace: 'pre-line' }}>{block.code}</pre>
+      <pre style={{ whiteSpace: 'pre-line' }}>
+        {' '}
+        <code>{block.code}</code>{' '}
+      </pre>
       <button
         onClick={() => copyToClipboard(block.code)}
         className={copied ? `${styles.copyBtn} ${styles.copied}` : `${styles.copyBtn}`}
