@@ -15,6 +15,17 @@
   width: min(700px, 90vw);
   padding: 5rem;
   margin-top: -10vh;
+  opacity: 0;
+  transform: translateY(1rem);
+  animation: fade-in-up 100ms linear forwards;
+  animation-delay: 100ms;
+}
+
+@keyframes fade-in-up {
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .message h1 {
