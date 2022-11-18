@@ -13,11 +13,15 @@ export const copyCode = [
     `,
   },
   {
-    title: 'Flex Center',
-    code: `display: flex; 
-    flex-direction: column; 
-    justify-content: center; 
-    align-items: center;`,
+    title: 'Screen Reader Only',
+    code: `.sr-only:not(:focus) {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      clip-path: inset(50%);
+      white-space: nowrap;
+    }`,
   },
   {
     title: 'Grid',
@@ -42,6 +46,13 @@ export const copyCode = [
     code: `position: absolute;
     left: 50%;
     transform: translateX(-50%);`,
+  },
+  {
+    title: 'Flex Center',
+    code: `display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;`,
   },
   {
     title: 'Skip Link',
