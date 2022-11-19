@@ -92,6 +92,52 @@ export const playgroundProjects = [
     ],
   },
   {
+    title: 'Dad Jokes',
+    src: '/images/playground/dad-jokes.jpg',
+    alt: 'A screen shot of the Dad Jokes site.',
+    description: [
+      'Playing around with a simple api and CSS animations. I really love how the button animation turned out.',
+      'Also created a slide out history section to show past jokes.',
+    ],
+    buttons: [
+      {
+        title: 'Live',
+        href: 'https://brandicameron.github.io/dad-jokes/',
+        ariaLabel: 'View this project live, opens in a new window.',
+        src: '/images/icons/new-window.svg',
+      },
+      {
+        title: 'Code',
+        href: 'https://github.com/brandicameron/dad-jokes/tree/master',
+        ariaLabel: 'View this project on github, opens in a new window.',
+        src: '/images/icons/github-icon.svg',
+      },
+    ],
+  },
+  {
+    title: 'Trivia Game',
+    src: '/images/playground/trivia.jpg',
+    alt: 'A screen shot of the Trivia site.',
+    description: [
+      'Getting more practice with React, creating branches, and consuming an api.',
+      'Created a progress bar on this one, which was a fun first!',
+    ],
+    buttons: [
+      {
+        title: 'Live',
+        href: 'https://brandicameron.github.io/trivia/',
+        ariaLabel: 'View this project live, opens in a new window.',
+        src: '/images/icons/new-window.svg',
+      },
+      {
+        title: 'Code',
+        href: 'https://github.com/brandicameron/trivia',
+        ariaLabel: 'View this project on github, opens in a new window.',
+        src: '/images/icons/github-icon.svg',
+      },
+    ],
+  },
+  {
     title: 'Statue Art',
     src: '/images/playground/statues.jpg',
     alt: 'A screen shot of a webpage displaying two women statue heads framed above a bouquet of flowers, with the text Anyone can do Anything spinning around the statues.',
