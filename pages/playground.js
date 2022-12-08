@@ -28,18 +28,13 @@ export default function Playground() {
           Nope. Is the code gorgeous? Probably not. But I hope you enjoy them.
         </h2>
         <FeatureProject />
-        <motion.ul
-          variants={fadeUp}
-          initial='initial'
-          animate='animate'
-          className={styles.projectsContainer}
-        >
+        <ul className={styles.projectsContainer}>
           {playgroundProjects.map((project) => (
             <li key={uuidv4()}>
               <ProjectCard project={project} />
             </li>
           ))}
-        </motion.ul>
+        </ul>
         <div className={styles.background}></div>
         <motion.p
           style={{ x: xLeft }}
@@ -61,17 +56,3 @@ export default function Playground() {
     </>
   );
 }
-
-const fadeUp = {
-  initial: {
-    y: 100,
-    opacity: 0,
-  },
-  animate: {
-    y: 0,
-    opacity: 1,
-    transition: {
-      ease: 'linear',
-    },
-  },
-};

@@ -5,6 +5,7 @@ export const featureSites = [
     alt: 'Men in Black Agent Portal Website',
     description: [
       'The !Official Men in Black Agent Portal page. You have 5 seconds to enter your agent code, or else...',
+      'Password Hint: 5 letter word for where the galaxy resides.',
     ],
     buttons: [
       {

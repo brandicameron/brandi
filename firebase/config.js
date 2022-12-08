@@ -17,3 +17,5 @@ const db = getFirestore();
 const auth = getAuth();
 
 export { db, auth };
+
+// Tried https://firebase.google.com/docs/auth/web/custom-dependencies to reduce dependencies, but throws error

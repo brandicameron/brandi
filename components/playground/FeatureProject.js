@@ -6,13 +6,13 @@ import ProjectCard from './ProjectCard';
 
 export default function FeatureProject() {
   return (
-    <motion.aside
+    <motion.section
       variants={fadeUp}
       initial='initial'
       animate='animate'
       className={styles.featureContainer}
     >
-      <h2>Current Side Project</h2>
+      <h3 className={styles.featureTitle}>Current Side Project</h3>
       <p>Working on a collection of faux sites, created in Next.js.</p>
       <ul className={styles.projectsContainer}>
         {featureSites.map((project) => (
@@ -21,7 +21,7 @@ export default function FeatureProject() {
           </li>
         ))}
       </ul>
-    </motion.aside>
+    </motion.section>
   );
 }
 

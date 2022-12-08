@@ -7,16 +7,18 @@
   filter: drop-shadow(5px 5px 10px rgba(0 0 0 / 15%));
 }
 
-.featureContainer h2,
+.featureTitle,
 .featureContainer > p {
   text-align: center;
   margin: auto;
 }
 
-.featureContainer h2 {
-  font-size: 2.75rem;
+.featureContainer .featureTitle {
+  font-size: var(--lg);
+  font-size: 2.5rem;
   line-height: 1;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
+  padding-top: 2rem;
 }
 
 .projectsContainer {

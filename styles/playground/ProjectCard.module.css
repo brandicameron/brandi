@@ -28,7 +28,7 @@
   margin: 0 auto 1rem auto;
 }
 
-.projectContent h3 {
+.projectContent h4 {
   font-size: var(--lg);
   text-align: center;
   margin-top: 0.5rem;
@@ -49,6 +49,10 @@
 }
 
 @media screen and (max-width: 600px) {
+  .projectContent {
+    width: 100%;
+  }
+
   .projectBtns {
     margin: auto auto 1rem auto;
   }

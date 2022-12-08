@@ -10,7 +10,7 @@ export default function ProjectCard({ project }) {
         <Image src={project.src} alt={project.alt} width={345} height={233} />
       </a>
       <div className={styles.projectContent}>
-        <h3>{project.title}</h3>
+        <h4>{project.title}</h4>
         {project.description.map((p) => (
           <p key={uuidv4()}>{p}</p>
         ))}
