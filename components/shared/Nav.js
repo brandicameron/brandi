@@ -1,8 +1,8 @@
 import styles from '../../styles/shared/Nav.module.css';
 import { useState } from 'react';
-import { navigationLinks } from '../../data/navigationLinks';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+import { navigationLinks } from '../../data/navigationLinks';
 
 export default function Nav() {
   const [menuOpen, setMenuOpen] = useState(false);

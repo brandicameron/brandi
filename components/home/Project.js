@@ -1,8 +1,8 @@
 import styles from '../../styles/home/Project.module.css';
 import Image from 'next/image';
 import { v4 as uuidv4 } from 'uuid';
-import LinkBtn from '../shared/LinkBtn';
 import { motion } from 'framer-motion';
+import LinkBtn from '../shared/LinkBtn';
 
 export default function Project({ project }) {
   return (
