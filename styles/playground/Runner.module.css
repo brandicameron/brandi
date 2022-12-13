@@ -1,0 +1,19 @@
+.runner {
+  position: absolute;
+  bottom: 0;
+  font-size: var(--med);
+  font-weight: var(--bold);
+  background-color: var(--background);
+  padding: 0.25rem 0;
+  white-space: nowrap;
+  border-top: 6px solid var(--textColor);
+  border-bottom: 6px solid var(--textColor);
+  box-shadow: -15px -20px 20px -20px rgb(34 34 34 / 30%);
+  z-index: 1001;
+}
+
+@media screen and (max-width: 600px) {
+  .runner {
+    display: none;
+  }
+}
