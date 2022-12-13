@@ -163,10 +163,6 @@
   border-bottom: none;
 }
 
-.logOutButton {
-  background-color: transparent;
-}
-
 @media screen and (max-width: 600px) {
   .header {
     position: relative;
