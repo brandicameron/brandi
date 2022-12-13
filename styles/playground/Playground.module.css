@@ -2,17 +2,14 @@
   position: relative;
   padding: 4rem 5vw 4rem 5vw;
   overflow-x: hidden;
-}
-
-.background {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: calc(100% - 550px);
-  background-color: var(--primary);
-  clip-path: polygon(0 175px, 100% 0, 101% 100%, 0 101%);
-  z-index: -1;
+  /* 70.04% below prevents angled line from appearing jagged */
+  background: linear-gradient(
+    -7deg,
+    var(--primary),
+    var(--primary) 75%,
+    var(--white) 75.04%,
+    var(--white)
+  );
 }
 
 .playgroundContainer h1 img {
@@ -29,58 +26,23 @@
   line-height: 140%;
 }
 
-.projectsContainer {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  align-items: stretch;
-  gap: 2rem;
-  max-width: 1200px;
-  margin: 0.5rem auto 8rem auto;
-}
-
-.runner {
-  position: absolute;
-  bottom: 30px;
-  font-size: var(--med);
-  font-weight: var(--bold);
-  background-color: var(--background);
-  padding: 0.25rem 0;
-  white-space: nowrap;
-  border-top: 6px solid var(--textColor);
-  border-bottom: 6px solid var(--textColor);
-  box-shadow: -15px -20px 20px -20px rgb(34 34 34 / 30%);
-  z-index: 1001;
-}
-
 @media screen and (max-width: 600px) {
+  .playgroundContainer {
+    background: linear-gradient(
+      -10deg,
+      var(--primary),
+      var(--primary) 92%,
+      var(--white) 92.04%,
+      var(--white)
+    );
+  }
+
   .playgroundContainer h1 img {
     margin-top: -20px;
-  }
-
-  .projectsContainer {
-    margin: 2rem auto 0 auto;
-  }
-
-  .background {
-    height: calc(100% - 450px);
-    clip-path: polygon(0 80px, 100% 0, 100% 100%, 0 100%);
-  }
-
-  .runner {
-    display: none;
   }
 }
 
 @media screen and (max-width: 350px) {
-  .background {
-    height: calc(100% - 350px);
-    clip-path: polygon(0 75px, 100% 0, 100% 100%, 0 100%);
-  }
-
-  .projectsContainer {
-    margin: 1rem auto 8rem auto;
-  }
-
   .playgroundContainer h2 {
     font-size: 1.25rem;
     line-height: 135%;

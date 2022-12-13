@@ -1,15 +1,9 @@
 import styles from '../styles/playground/Playground.module.css';
 import Head from 'next/head';
-import { playgroundProjects } from '../data/playgroundProjects';
-import ProjectCard from '../components/playground/ProjectCard';
-import FeatureProject from '../components/playground/FeatureProject';
-import { v4 as uuidv4 } from 'uuid';
-import { motion, useTransform, useViewportScroll } from 'framer-motion';
+import PlaygroundProjects from '../components/playground/PlaygroundProjects';
+import Runner from '../components/playground/Runner';
 
 export default function Playground() {
-  const { scrollY } = useViewportScroll();
-  const xLeft = useTransform(scrollY, [0, 4000], ['-80%', '0vw']);
-
   return (
     <>
       <Head>
@@ -27,31 +21,8 @@ export default function Playground() {
           Fun little projects created from scratch on this learning journey. Are they important?
           Nope. Is the code gorgeous? Probably not. But I hope you enjoy them.
         </h2>
-        <FeatureProject />
-        <ul className={styles.projectsContainer}>
-          {playgroundProjects.map((project) => (
-            <li key={uuidv4()}>
-              <ProjectCard project={project} />
-            </li>
-          ))}
-        </ul>
-        <div className={styles.background}></div>
-        <motion.p
-          style={{ x: xLeft }}
-          className={styles.runner}
-          aria-label='All work and no play makes Brandi a dull girl.'
-        >
-          <span aria-hidden>
-            All work and no play makes Brandi a dull girl. &nbsp; &nbsp; All work and no play makes
-            Brandi a dull girl. &nbsp; &nbsp;All work and no play makes Brandi a dull girl. &nbsp;
-            &nbsp;All work and no play makes Brandi a dull girl. &nbsp; &nbsp;All work and no play
-            makes Brandi a dull girl.&nbsp; &nbsp; All work and no play makes Brandi a dull girl.
-            &nbsp; &nbsp;All work and no play makes Brandi a dull girl. &nbsp; &nbsp;All work and no
-            play makes Brandi a dull girl. &nbsp; &nbsp;All work and no play makes Brandi a dull
-            girl.&nbsp; &nbsp; All work and no play makes Brandi a dull girl. &nbsp; &nbsp;All work
-            and no play makes Brandi a dull girl.
-          </span>
-        </motion.p>
+        <PlaygroundProjects />
+        <Runner />
       </section>
     </>
   );

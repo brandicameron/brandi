@@ -1,4 +1,4 @@
-export const featureSites = [
+export const featureProjects = [
   {
     title: '#1: MIB Agent Portal',
     src: '/images/playground/men-in-black.jpg',
@@ -27,7 +27,8 @@ export const featureSites = [
     src: '/images/playground/krusty-krab.jpg',
     alt: 'The Krusty Krab Website',
     description: [
-      'Home of the world famous Krabby Patty and the most popular restaurant in Bikini Bottom — place your order online today!',
+      'Home of the world famous Krabby Patty and the most popular restaurant in Bikini Bottom.',
+      'Place your order online today!',
     ],
     buttons: [
       {
