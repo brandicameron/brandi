@@ -60,7 +60,7 @@ export default function About() {
           </p>
         </div>
         <p>
-          I am in search of a place to expand my programming knowledge and grow into a well rounded
+          I am in search of a place to expand my programming knowledge and grow into a well-rounded
           developer.
           <span style={{ display: toggled ? 'contents' : 'none' }}>
             &nbsp; If you feel that my skill set and commitment to excellence would contribute to
