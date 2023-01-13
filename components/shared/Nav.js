@@ -60,7 +60,6 @@ export default function Nav() {
                   alt='Go back home.'
                   height='40'
                   width='40'
-                  title='Home'
                 />
               </a>
             </Link>
@@ -72,7 +71,6 @@ export default function Nav() {
                   style={{
                     color: router.asPath === link.href ? 'var(--primary)' : 'var(--themeTextColor)',
                   }}
-                  title={link.name}
                 >
                   {link.name}
                 </a>
@@ -80,12 +78,7 @@ export default function Nav() {
             </li>
           ))}
           <li onClick={handleCloseMenu}>
-            <a
-              className={styles.resumeLink}
-              href='/brandi-cameron-resume.pdf'
-              target='_blank'
-              title='Resumé'
-            >
+            <a className={styles.resumeLink} href='/brandi-cameron-resume.pdf' target='_blank'>
               Resumé
             </a>
           </li>
