@@ -21,14 +21,16 @@ export default function Nav() {
       <a href='#skipToContent' className={styles.skipToContentLink}>
         Skip to Content
       </a>
-      <nav>
+      <nav aria-label='Main menu'>
         <button
           className={styles.hamburgerBtn}
           onClick={handleOpenCloseMenu}
-          aria-label='Click to open navigation menu.'
+          aria-expanded={menuOpen}
         >
+          <span className='sr-only'>{menuOpen ? 'Close' : 'Open'} navigation menu.</span>
           <span
             className={`${styles.line} ${styles.line1}`}
+            aria-hidden='true'
             style={{
               backgroundColor:
                 router.asPath === '/playground' ? 'var(--black)' : 'var(--themeTextColor)',
@@ -36,6 +38,7 @@ export default function Nav() {
           ></span>
           <span
             className={`${styles.line} ${styles.line2}`}
+            aria-hidden='true'
             style={{
               backgroundColor:
                 router.asPath === '/playground' ? 'var(--black)' : 'var(--themeTextColor)',
@@ -43,6 +46,7 @@ export default function Nav() {
           ></span>
           <span
             className={`${styles.line} ${styles.line3}`}
+            aria-hidden='true'
             style={{
               backgroundColor:
                 router.asPath === '/playground' ? 'var(--black)' : 'var(--themeTextColor)',
