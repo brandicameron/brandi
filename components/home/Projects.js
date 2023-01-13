@@ -21,9 +21,7 @@ export default function Projects() {
     <section className={style.container} id='projects'>
       <ul className={style.projects}>
         {projects.slice(0, numProjectsShown).map((project) => (
-          <li className={style.project} key={uuidv4()}>
-            <Project project={project} />
-          </li>
+          <Project key={uuidv4()} project={project} />
         ))}
       </ul>
       <button className={`${styles.btn} ${styles.lg}`} onClick={handleViewMore}>
