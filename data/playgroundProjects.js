@@ -1,6 +1,7 @@
 export const playgroundProjects = [
   {
     title: 'Texting Test',
+    tech: ['HTML', 'CSS', 'Javascript'],
     src: '/images/playground/texting-test.jpg',
     alt: 'The homepage of the Texting Test website.',
     description: [
@@ -24,6 +25,7 @@ export const playgroundProjects = [
   },
   {
     title: 'Hangman',
+    tech: ['HTML', 'SASS', 'Javascript'],
     src: '/images/playground/hang-cole.jpg',
     alt: 'A screen shot of an online hangman game.',
     description: [
@@ -47,6 +49,7 @@ export const playgroundProjects = [
   },
   {
     title: 'Monster Match',
+    tech: ['SASS', 'Javascript', 'Local Storage'],
     src: '/images/playground/monster-match.jpg',
     alt: 'The screen shot of the Moster Match card game.',
     description: [
@@ -70,6 +73,7 @@ export const playgroundProjects = [
   },
   {
     title: 'US Map Quiz',
+    tech: ['HTML', 'CSS', 'Javascript'],
     src: '/images/playground/map-quiz.jpg',
     alt: 'A screen shot of the US Map Quiz game.',
     description: [
@@ -93,6 +97,7 @@ export const playgroundProjects = [
   },
   {
     title: 'Dad Jokes',
+    tech: ['React', 'API', 'Local Storage'],
     src: '/images/playground/dad-jokes.jpg',
     alt: 'A screen shot of the Dad Jokes site.',
     description: [
@@ -116,6 +121,7 @@ export const playgroundProjects = [
   },
   {
     title: 'Trivia Game',
+    tech: ['React', 'API'],
     src: '/images/playground/trivia.jpg',
     alt: 'A screen shot of the Trivia site.',
     description: [
@@ -139,6 +145,7 @@ export const playgroundProjects = [
   },
   {
     title: 'Statue Art',
+    tech: ['HTML', 'CSS', 'Javascript'],
     src: '/images/playground/statues.jpg',
     alt: 'A screen shot of a webpage displaying two women statue heads framed above a bouquet of flowers, with the text Anyone can do Anything spinning around the statues.',
     description: [
@@ -162,6 +169,7 @@ export const playgroundProjects = [
   },
   {
     title: 'Wordy Clock',
+    tech: ['HTML', 'CSS', 'Javascript'],
     src: '/images/playground/wordy-clock.jpg',
     alt: 'A screen shot of an clock that displays the time in words instead of numbers.',
     description: ['A clock, but with words. 🤪'],

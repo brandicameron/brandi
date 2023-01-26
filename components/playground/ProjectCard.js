@@ -1,6 +1,7 @@
 import styles from '../../styles/playground/ProjectCard.module.css';
 import Image from 'next/image';
 import LinkBtn from '../shared/LinkBtn';
+import { v4 as uuidv4 } from 'uuid';
 
 export default function ProjectCard({ project }) {
   return (
@@ -10,6 +11,11 @@ export default function ProjectCard({ project }) {
       </a>
       <div className={styles.projectContent}>
         <h4>{project.title}</h4>
+        <ul className={styles.techList}>
+          {project.tech.map((item) => (
+            <li key={uuidv4()}>{item}</li>
+          ))}
+        </ul>
         {project.description.map((p) => (
           <p key={p}>{p}</p>
         ))}

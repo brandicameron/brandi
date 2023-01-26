@@ -20,6 +20,10 @@
   padding: 2rem 0 0.5rem 0;
 }
 
+.featureContainer .projectsContainer {
+  max-width: 835px;
+}
+
 .projectsContainer {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
