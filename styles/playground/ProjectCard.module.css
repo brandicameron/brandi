@@ -43,8 +43,8 @@
   font-size: 0.95rem;
   margin: 0.5rem auto 1rem auto;
   padding: 0.35rem 0;
-  border-top: 1px dotted rgb(184, 184, 184);
-  border-bottom: 1px dotted rgb(184, 184, 184);
+  border-top: 1px dotted var(--techBorderColor);
+  border-bottom: 1px dotted var(--techBorderColor);
 }
 
 .techList li:not(:first-child)::before {
