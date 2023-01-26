@@ -154,13 +154,12 @@
 }
 
 .navigation.open li {
-  border-bottom: 6px solid var(--primary);
   padding: 0.75rem 0;
   width: 100%;
 }
 
-.navigation.open li:last-child {
-  border-bottom: none;
+.navigation.open li:not(:last-child) {
+  border-bottom: 6px solid var(--primary);
 }
 
 @media screen and (max-width: 600px) {
