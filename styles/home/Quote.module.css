@@ -2,7 +2,6 @@
   display: grid;
   place-content: center;
   color: var(--white);
-  width: 100%;
   margin: 0 auto;
   background-image: linear-gradient(170deg, var(--primary) 70%, #5263fd, var(--primary));
   background-attachment: fixed;

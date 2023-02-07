@@ -16,7 +16,7 @@
   gap: 2rem;
   background-color: var(--primary);
   color: var(--white);
-  padding: 12rem 0;
+  padding: 12rem 0 10rem 0;
   clip-path: polygon(0 0, 100% 125px, 100% 100%, 0 100%);
 }
 
