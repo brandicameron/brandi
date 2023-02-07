@@ -1,7 +1,7 @@
 export const featureProjects = [
   {
     title: '#1: MIB Agent Portal',
-    tech: ['Next.js', 'CSS Modules'],
+    tech: ['Next.js', 'CSS Modules/Animations'],
     src: '/images/playground/men-in-black.jpg',
     alt: 'Men in Black Agent Portal Website',
     description: [
@@ -25,7 +25,7 @@ export const featureProjects = [
   },
   {
     title: '#2: The Krusty Krab',
-    tech: ['Next.js', 'CSS Modules'],
+    tech: ['Next.js', 'Framer Motion'],
     src: '/images/playground/krusty-krab.jpg',
     alt: 'The Krusty Krab Website',
     description: [
