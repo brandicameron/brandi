@@ -6,6 +6,7 @@
   background-color: var(--primary);
   color: var(--white);
   font-weight: var(--bold);
+  border-top: 1px solid var(--borderColor);
 }
 
 .footer ul {

@@ -11,10 +11,9 @@
 }
 
 .content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  place-content: center;
+  gap: 2rem;
   background-color: var(--primary);
   color: var(--white);
   padding: 12rem 0;
@@ -23,7 +22,7 @@
 
 .content h2 {
   font-size: var(--lg);
-  margin: 2rem auto 0 auto;
+  margin: 1rem auto -1.5rem auto;
 }
 
 .toggle {
@@ -45,7 +44,7 @@
   border: 6px solid var(--black);
   border-radius: 11px;
   cursor: pointer;
-  margin: 1.5rem 1rem;
+  margin: 1rem;
 }
 
 /* used padding for circle instead of fixed size with aspect ratio due to no support in Safari <15  */
@@ -72,12 +71,9 @@
 
 .content p {
   width: 85vw;
-  max-width: 475px;
+  max-width: 40ch;
   font-size: 1.1rem;
-}
-
-.content p + .content p {
-  margin-top: 1rem;
+  margin: 0 auto;
 }
 
 .inlineLink {
@@ -108,16 +104,15 @@
 @media screen and (max-width: 600px) {
   .content {
     clip-path: polygon(0 0, 100% 75px, 100% 100%, 0 100%);
-    padding: 12rem 0 8rem 0;
-  }
-
-  .content h2 {
-    margin: 0 auto;
+    padding: 10rem 0 8rem 0;
   }
 
   .toggleBtn {
     transform: scale(1.2);
-    margin: 1.5rem 1.25rem;
+  }
+
+  .buttons {
+    margin-top: 1.75rem;
   }
 
   .buttons > :last-child {
