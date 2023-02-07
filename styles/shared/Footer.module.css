@@ -1,17 +1,17 @@
 .footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  display: grid;
+  place-content: center;
+  gap: 1rem;
   background-color: var(--primary);
   color: var(--white);
   font-weight: var(--bold);
+  border-top: 1px solid var(--borderColor);
+  padding: 1rem 0 4rem 0;
 }
 
 .footer ul {
   display: flex;
   gap: 3rem;
-  padding: 2rem 0 1rem 0;
 }
 
 .footer img {
@@ -37,7 +37,8 @@
 }
 
 .footer small {
-  padding: 1rem 0 2rem 0;
+  font-size: inherit;
+  text-align: center;
 }
 
 @media screen and (max-width: 600px) {

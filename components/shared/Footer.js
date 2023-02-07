@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <>
       <footer className={styles.footer}>
-        <nav>
+        <address>
           <ul>
             <li>
               <Link href='/'>
@@ -27,7 +27,7 @@ export default function Footer() {
               </li>
             ))}
           </ul>
-        </nav>
+        </address>
         <a
           className={styles.inlineLink}
           href='https://github.com/brandicameron/brandi'

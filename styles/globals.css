@@ -12,6 +12,7 @@
   --med: 1.35rem;
   --borderRadius: 8px;
   --techBorderColor: #b8b8b8;
+  --borderColor: #737edd;
   --themeBackground: #f9f9f9;
   --themeTextColor: #1e1e1e;
 }
@@ -92,6 +93,10 @@ img {
 ul {
   list-style: none;
   padding: 0;
+}
+
+address {
+  font-style: normal;
 }
 
 /* The VoiceOver screen reader has an issue where unordered lists with a list-style-type value of none applied to them will not be announced as a list. To address this, add a zero-width space as pseudo content before each list item to ensure the list is announced properly. This ensures the design is unaffected by the bug fix and that list items are not improperly described.

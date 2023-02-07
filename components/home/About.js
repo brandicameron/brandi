@@ -74,7 +74,7 @@ export default function About() {
           </a>{' '}
           — let&apos;s create some cool things together!
         </p>
-        <div className={styles.buttons} id='contact'>
+        <address className={styles.buttons} id='contact'>
           {linkButtons.map((button) => (
             <LinkBtn
               key={button.title}
@@ -85,7 +85,7 @@ export default function About() {
               src={button.src}
             />
           ))}
-        </div>
+        </address>
       </div>
     </section>
   );

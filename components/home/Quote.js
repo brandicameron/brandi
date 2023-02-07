@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 export default function Quote() {
   return (
-    <aside className={`${styles.container}`}>
+    <blockquote className={`${styles.container}`}>
       <p className={styles.quote}>
         The dopamine
         <motion.img
@@ -28,7 +28,7 @@ export default function Quote() {
           height='170'
         />
       </p>
-    </aside>
+    </blockquote>
   );
 }
 
