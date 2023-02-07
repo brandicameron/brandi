@@ -94,6 +94,10 @@ ul {
   padding: 0;
 }
 
+address {
+  font-style: normal;
+}
+
 /* The VoiceOver screen reader has an issue where unordered lists with a list-style-type value of none applied to them will not be announced as a list. To address this, add a zero-width space as pseudo content before each list item to ensure the list is announced properly. This ensures the design is unaffected by the bug fix and that list items are not improperly described.
 https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type
  */
