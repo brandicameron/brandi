@@ -1,4 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap');
+@font-face {
+  font-family: 'Inter';
+  font-weight: 400;
+  font-display: swap;
+  src: local('Inter-Regular'), url('../public/fonts/inter-regular-webfont.woff2') format('woff2'),
+    url('../public/fonts/inter-regular-webfont.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-weight: 900;
+  font-display: swap;
+  src: local('Inter-Black'), url('../public/fonts/inter-black-webfont.woff2') format('woff2'),
+    url('../public/fonts/inter-black-webfont.woff') format('woff');
+}
 
 :root {
   --black: #1e1e1e;
