@@ -14,4 +14,9 @@ export const footerLinks = [
     src: '/images/icons/github-icon.svg',
     title: 'Github',
   },
+  {
+    href: 'https://www.linkedin.com/in/brandi-cameron',
+    src: '/images/icons/linkedin-icon.svg',
+    title: 'LinkedIn',
+  },
 ];
