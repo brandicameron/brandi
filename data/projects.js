@@ -85,33 +85,6 @@ export const projects = [
     ],
   },
   {
-    title: 'Blood Pressure Tracker',
-    contribution: 'Design | Development',
-    technologies: ['React', 'Firebase', 'Sass'],
-    ipad: '/images/projects/bp-ipad.png',
-    iphone: '/images/projects/bp-iphone.png',
-    ipadAlt: 'An ipad displaying blood pressure readings and heart rate readings.',
-    iphoneAlt: 'An iphone displaying blood pressure readings and heart rate readings.',
-    description: [
-      'My second React project was a bit more sensible and I really got to see where components shine.',
-      'You can instantly sign in as a guest, so give it a try!',
-    ],
-    buttons: [
-      {
-        title: 'Live',
-        href: 'https://brandicameron.github.io/bp-react/',
-        ariaLabel: 'View this project live, opens in a new window.',
-        src: '/images/icons/new-window.svg',
-      },
-      {
-        title: 'Code',
-        href: 'https://github.com/brandicameron/bp-react/tree/master',
-        ariaLabel: 'View this project on github, opens in a new window.',
-        src: '/images/icons/github-icon.svg',
-      },
-    ],
-  },
-  {
     title: 'Cameron Home Inspection',
     contribution: 'Design | Development',
     technologies: ['HTML', 'Sass', 'Javascript'],
@@ -161,6 +134,33 @@ export const projects = [
       {
         title: 'Code',
         href: 'https://github.com/brandicameron/etchasketch',
+        ariaLabel: 'View this project on github, opens in a new window.',
+        src: '/images/icons/github-icon.svg',
+      },
+    ],
+  },
+  {
+    title: 'Blood Pressure Tracker',
+    contribution: 'Design | Development',
+    technologies: ['React', 'Firebase', 'Sass'],
+    ipad: '/images/projects/bp-ipad.png',
+    iphone: '/images/projects/bp-iphone.png',
+    ipadAlt: 'An ipad displaying blood pressure readings and heart rate readings.',
+    iphoneAlt: 'An iphone displaying blood pressure readings and heart rate readings.',
+    description: [
+      'My second React project was a bit more sensible and I really got to see where components shine.',
+      'You can instantly sign in as a guest, so give it a try!',
+    ],
+    buttons: [
+      {
+        title: 'Live',
+        href: 'https://brandicameron.github.io/bp-react/',
+        ariaLabel: 'View this project live, opens in a new window.',
+        src: '/images/icons/new-window.svg',
+      },
+      {
+        title: 'Code',
+        href: 'https://github.com/brandicameron/bp-react/tree/master',
         ariaLabel: 'View this project on github, opens in a new window.',
         src: '/images/icons/github-icon.svg',
       },
