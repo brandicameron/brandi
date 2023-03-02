@@ -43,6 +43,12 @@
 
 @media screen and (max-width: 600px) {
   .footer ul {
-    gap: 2rem;
+    gap: 1.2rem;
+    font-size: 0.9rem;
+  }
+
+  .footer img {
+    width: 30px;
+    height: auto;
   }
 }

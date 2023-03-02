@@ -47,6 +47,10 @@
     background-image: url('/images/home/hey-mobile.svg');
     height: 210px;
   }
+
+  .underline {
+    bottom: -2px;
+  }
 }
 
 /* Landscape Mobile */
