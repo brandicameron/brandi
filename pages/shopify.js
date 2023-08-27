@@ -7,7 +7,7 @@ export default function Shopify() {
         <h1>I closed this Shopify business on November 1, 2022</h1>
         <p>
           but if you REALLY want to see it, and are patient enough for Wayback Machine to load,
-          you're welcome to check it out here:
+          you&apos;re welcome to check it out here:
         </p>
 
         <small>View the store:</small>
