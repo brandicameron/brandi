@@ -4,7 +4,6 @@
   color: var(--white);
   margin: 0 auto;
   background-image: linear-gradient(170deg, var(--primary) 70%, #5263fd, var(--primary));
-  background-attachment: fixed;
   padding: 8rem 0 17rem 0;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 }

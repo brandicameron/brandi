@@ -72,7 +72,7 @@ export const projects = [
     buttons: [
       {
         title: 'Live',
-        href: 'https://cleanandgreennashville.com/',
+        href: 'https://clean.brandicameron.com/',
         ariaLabel: 'View this project live, opens in a new window.',
         src: '/images/icons/new-window.svg',
       },

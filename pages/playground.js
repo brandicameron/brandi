@@ -22,7 +22,7 @@ export default function Playground() {
           Nope. Is the code gorgeous? Probably not. But I hope you enjoy them.
         </h2>
         <PlaygroundProjects />
-        <Runner />
+        {/* <Runner /> */}
       </section>
     </>
   );
